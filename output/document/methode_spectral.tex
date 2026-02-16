@@ -1,0 +1,3754 @@
+%
+\begin{isabellebody}%
+\setisabellecontext{methode{\isacharunderscore}{\kern0pt}spectral}%
+%
+\isadelimtheory
+%
+\endisadelimtheory
+%
+\isatagtheory
+\isakeywordONE{theory}\isamarkupfalse%
+\ methode{\isacharunderscore}{\kern0pt}spectral\isanewline
+\ \ \isakeywordTWO{imports}\ Complex{\isacharunderscore}{\kern0pt}Main\isanewline
+\isakeywordTWO{begin}%
+\endisatagtheory
+{\isafoldtheory}%
+%
+\isadelimtheory
+%
+\endisadelimtheory
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Forme genrale des suites A et B%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ SA\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SA\ n\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{3}}{\isachardot}{\kern0pt}{\isadigit{2}}{\isadigit{5}}\ {\isacharslash}{\kern0pt}\ {\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{2}}\ {\isacharcircum}{\kern0pt}\ n{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ {\isadigit{2}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ SB\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SB\ n\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{6}}{\isachardot}{\kern0pt}{\isadigit{5}}\ {\isacharslash}{\kern0pt}\ {\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{2}}\ {\isacharcircum}{\kern0pt}\ n{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ {\isadigit{6}}{\isadigit{6}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ SA{\isacharunderscore}{\kern0pt}forme{\isacharunderscore}{\kern0pt}generale{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}n\ {\isachargreater}{\kern0pt}\ {\isadigit{0}}{\isachardoublequoteclose}\isanewline
+\ \ \isakeywordTWO{shows}\ {\isachardoublequoteopen}SA\ n\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{3}}{\isachardot}{\kern0pt}{\isadigit{2}}{\isadigit{5}}\ {\isacharslash}{\kern0pt}\ {\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{2}}\ {\isacharcircum}{\kern0pt}\ n{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ {\isadigit{2}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ assms\ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ SA{\isacharunderscore}{\kern0pt}def{\isacharparenright}{\kern0pt}%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ SB{\isacharunderscore}{\kern0pt}forme{\isacharunderscore}{\kern0pt}generale{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}n\ {\isachargreater}{\kern0pt}\ {\isadigit{0}}{\isachardoublequoteclose}\isanewline
+\ \ \isakeywordTWO{shows}\ {\isachardoublequoteopen}SB\ n\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{6}}{\isachardot}{\kern0pt}{\isadigit{5}}\ {\isacharslash}{\kern0pt}\ {\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{2}}\ {\isacharcircum}{\kern0pt}\ n{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ {\isadigit{6}}{\isadigit{6}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ assms\ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ SB{\isacharunderscore}{\kern0pt}def{\isacharparenright}{\kern0pt}%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ K{\isacharunderscore}{\kern0pt}n\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}{\isacharparenleft}{\kern0pt}nat\ {\isasymRightarrow}\ real{\isacharparenright}{\kern0pt}\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}K{\isacharunderscore}{\kern0pt}n\ A\ {\isacharequal}{\kern0pt}\ A\ {\isadigit{6}}{\isachardoublequoteclose}%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Rapport spectral 1/2%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ RsP\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ {\isasymRightarrow}\ nat\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}RsP\ n{\isadigit{1}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}SA\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ SA\ n{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isacharparenleft}{\kern0pt}SB\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ SB\ n{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ RsP{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}demi{\isacharunderscore}{\kern0pt}general{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}n{\isadigit{1}}\ {\isachargreater}{\kern0pt}\ {\isadigit{0}}{\isachardoublequoteclose}\ {\isachardoublequoteopen}n{\isadigit{2}}\ {\isachargreater}{\kern0pt}\ {\isadigit{0}}{\isachardoublequoteclose}\ {\isachardoublequoteopen}n{\isadigit{1}}\ {\isasymnoteq}\ n{\isadigit{2}}{\isachardoublequoteclose}\isanewline
+\ \ \isakeywordTWO{shows}\ {\isachardoublequoteopen}RsP\ n{\isadigit{1}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isacharslash}{\kern0pt}{\isadigit{2}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{proof}\isamarkupfalse%
+\ {\isacharminus}{\kern0pt}\isanewline
+\ \ \isakeywordONE{have}\isamarkupfalse%
+\ SA{\isadigit{1}}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}SA\ n{\isadigit{1}}\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{3}}{\isachardot}{\kern0pt}{\isadigit{2}}{\isadigit{5}}\ {\isacharslash}{\kern0pt}\ {\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{2}}\ {\isacharcircum}{\kern0pt}\ n{\isadigit{1}}{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ {\isadigit{2}}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ SA{\isacharunderscore}{\kern0pt}def{\isacharparenright}{\kern0pt}\isanewline
+\ \ \isakeywordONE{have}\isamarkupfalse%
+\ SA{\isadigit{2}}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}SA\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{3}}{\isachardot}{\kern0pt}{\isadigit{2}}{\isadigit{5}}\ {\isacharslash}{\kern0pt}\ {\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{2}}\ {\isacharcircum}{\kern0pt}\ n{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ {\isadigit{2}}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ SA{\isacharunderscore}{\kern0pt}def{\isacharparenright}{\kern0pt}\isanewline
+\ \ \isakeywordONE{have}\isamarkupfalse%
+\ SB{\isadigit{1}}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}SB\ n{\isadigit{1}}\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{6}}{\isachardot}{\kern0pt}{\isadigit{5}}\ {\isacharslash}{\kern0pt}\ {\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{2}}\ {\isacharcircum}{\kern0pt}\ n{\isadigit{1}}{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ {\isadigit{6}}{\isadigit{6}}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ SB{\isacharunderscore}{\kern0pt}def{\isacharparenright}{\kern0pt}\isanewline
+\ \ \isakeywordONE{have}\isamarkupfalse%
+\ SB{\isadigit{2}}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}SB\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{6}}{\isachardot}{\kern0pt}{\isadigit{5}}\ {\isacharslash}{\kern0pt}\ {\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{2}}\ {\isacharcircum}{\kern0pt}\ n{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ {\isadigit{6}}{\isadigit{6}}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ SB{\isacharunderscore}{\kern0pt}def{\isacharparenright}{\kern0pt}\isanewline
+\isanewline
+\ \ \isakeywordONE{have}\isamarkupfalse%
+\ num{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}SA\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ SA\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{3}}{\isachardot}{\kern0pt}{\isadigit{2}}{\isadigit{5}}\ {\isacharslash}{\kern0pt}\ {\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{2}}\ {\isacharcircum}{\kern0pt}\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ {\isadigit{2}}\ {\isacharcircum}{\kern0pt}\ n{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ SA{\isadigit{1}}\ SA{\isadigit{2}}\ algebra{\isacharunderscore}{\kern0pt}simps{\isacharparenright}{\kern0pt}\isanewline
+\ \ \isakeywordONE{have}\isamarkupfalse%
+\ den{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}SB\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ SB\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{6}}{\isachardot}{\kern0pt}{\isadigit{5}}\ {\isacharslash}{\kern0pt}\ {\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{2}}\ {\isacharcircum}{\kern0pt}\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ {\isadigit{2}}\ {\isacharcircum}{\kern0pt}\ n{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ SB{\isadigit{1}}\ SB{\isadigit{2}}\ algebra{\isacharunderscore}{\kern0pt}simps{\isacharparenright}{\kern0pt}\isanewline
+\isanewline
+\ \ \isakeywordONE{have}\isamarkupfalse%
+\ {\isachardoublequoteopen}RsP\ n{\isadigit{1}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{3}}{\isachardot}{\kern0pt}{\isadigit{2}}{\isadigit{5}}\ {\isacharslash}{\kern0pt}\ {\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{2}}\ {\isacharcircum}{\kern0pt}\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ {\isadigit{2}}\ {\isacharcircum}{\kern0pt}\ n{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\isanewline
+\ \ \ \ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{6}}{\isachardot}{\kern0pt}{\isadigit{5}}\ {\isacharslash}{\kern0pt}\ {\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{2}}\ {\isacharcircum}{\kern0pt}\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ {\isadigit{2}}\ {\isacharcircum}{\kern0pt}\ n{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ RsP{\isacharunderscore}{\kern0pt}def\ num\ den{\isacharparenright}{\kern0pt}\isanewline
+\ \ \isakeywordONE{also}\isamarkupfalse%
+\ \isakeywordONE{have}\isamarkupfalse%
+\ {\isachardoublequoteopen}{\isachardot}{\kern0pt}{\isachardot}{\kern0pt}{\isachardot}{\kern0pt}\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{3}}{\isachardot}{\kern0pt}{\isadigit{2}}{\isadigit{5}}\ {\isacharslash}{\kern0pt}\ {\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{6}}{\isachardot}{\kern0pt}{\isadigit{5}}\ {\isacharslash}{\kern0pt}\ {\isadigit{2}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{using}\isamarkupfalse%
+\ assms\ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ field{\isacharunderscore}{\kern0pt}simps{\isacharparenright}{\kern0pt}\isanewline
+\ \ \isakeywordONE{also}\isamarkupfalse%
+\ \isakeywordONE{have}\isamarkupfalse%
+\ {\isachardoublequoteopen}{\isachardot}{\kern0pt}{\isachardot}{\kern0pt}{\isachardot}{\kern0pt}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isacharslash}{\kern0pt}{\isadigit{2}}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{by}\isamarkupfalse%
+\ simp\isanewline
+\ \ \isakeywordONE{finally}\isamarkupfalse%
+\ \isakeywordTHREE{show}\isamarkupfalse%
+\ {\isacharquery}{\kern0pt}thesis\ \isakeywordONE{{\isachardot}{\kern0pt}}\isamarkupfalse%
+\isanewline
+\isakeywordONE{qed}\isamarkupfalse%
+%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Rapport spectral n\<times>n (généralisation symétrique)%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ RsP{\isacharunderscore}{\kern0pt}nn\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ list\ {\isasymRightarrow}\ nat\ list\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}RsP{\isacharunderscore}{\kern0pt}nn\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}sum{\isacharunderscore}{\kern0pt}list\ {\isacharparenleft}{\kern0pt}map\ SA\ A{\isacharunderscore}{\kern0pt}indices{\isacharparenright}{\kern0pt}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}sum{\isacharunderscore}{\kern0pt}list\ {\isacharparenleft}{\kern0pt}map\ SB\ B{\isacharunderscore}{\kern0pt}indices{\isacharparenright}{\kern0pt}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ rapport{\isacharunderscore}{\kern0pt}spectral{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}demi{\isacharunderscore}{\kern0pt}nn\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ list\ {\isasymRightarrow}\ nat\ list\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}rapport{\isacharunderscore}{\kern0pt}spectral{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}demi{\isacharunderscore}{\kern0pt}nn\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices\ {\isasymlongleftrightarrow}\isanewline
+\ \ \ \ \ RsP{\isacharunderscore}{\kern0pt}nn\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isacharslash}{\kern0pt}{\isadigit{2}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ A{\isadigit{3}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ list{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}A{\isadigit{3}}\ {\isacharequal}{\kern0pt}\ {\isacharbrackleft}{\kern0pt}{\isadigit{2}}{\isacharcomma}{\kern0pt}\ {\isadigit{9}}{\isacharcomma}{\kern0pt}\ {\isadigit{1}}{\isadigit{0}}{\isacharbrackright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ B{\isadigit{3}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ list{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}B{\isadigit{3}}\ {\isacharequal}{\kern0pt}\ {\isacharbrackleft}{\kern0pt}{\isadigit{3}}{\isacharcomma}{\kern0pt}\ {\isadigit{1}}{\isadigit{1}}{\isacharcomma}{\kern0pt}\ {\isadigit{1}}{\isadigit{5}}{\isacharbrackright}{\kern0pt}{\isachardoublequoteclose}%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Section du Digamma calcule.%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}calc\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ {\isasymRightarrow}\ nat\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}digamma{\isacharunderscore}{\kern0pt}calc\ n\ p\ {\isacharequal}{\kern0pt}\ SB\ n\ {\isacharminus}{\kern0pt}\ {\isadigit{6}}{\isadigit{4}}\ {\isacharasterisk}{\kern0pt}\ real\ p{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ prime{\isacharunderscore}{\kern0pt}equation\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ {\isasymRightarrow}\ nat\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}prime{\isacharunderscore}{\kern0pt}equation\ n\ p\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}SB\ n\ {\isacharminus}{\kern0pt}\ digamma{\isacharunderscore}{\kern0pt}calc\ n\ p{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{6}}{\isadigit{4}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}calc{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}alt{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}digamma{\isacharunderscore}{\kern0pt}calc\ n\ p\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}SB\ n\ {\isacharslash}{\kern0pt}\ {\isadigit{6}}{\isadigit{4}}\ {\isacharminus}{\kern0pt}\ real\ p{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isadigit{6}}{\isadigit{4}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}calc{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ prime{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}identity{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}prime{\isacharunderscore}{\kern0pt}equation\ n\ p\ {\isacharequal}{\kern0pt}\ real\ p{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ prime{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}def\ digamma{\isacharunderscore}{\kern0pt}calc{\isacharunderscore}{\kern0pt}def\isanewline
+\ \ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Axiomatisation positive%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{axiomatization}\isamarkupfalse%
+\ \isakeywordTWO{where}\isanewline
+\ \ spectral{\isacharunderscore}{\kern0pt}postulate{\isacharunderscore}{\kern0pt}pos{\isacharcolon}{\kern0pt}\isanewline
+\ \ \ \ {\isachardoublequoteopen}{\isasymAnd}n\ p{\isachardot}{\kern0pt}\ n\ {\isasymge}\ {\isadigit{1}}\ {\isasymLongrightarrow}\ prime\ p\ {\isasymLongrightarrow}\ prime{\isacharunderscore}{\kern0pt}equation\ n\ p\ {\isacharequal}{\kern0pt}\ real\ p{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ prime{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}for{\isacharunderscore}{\kern0pt}primes{\isacharunderscore}{\kern0pt}pos{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}n\ {\isasymge}\ {\isadigit{1}}{\isachardoublequoteclose}\ {\isachardoublequoteopen}prime\ p{\isachardoublequoteclose}\isanewline
+\ \ \isakeywordTWO{shows}\ {\isachardoublequoteopen}prime{\isacharunderscore}{\kern0pt}equation\ n\ p\ {\isacharequal}{\kern0pt}\ real\ p{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ spectral{\isacharunderscore}{\kern0pt}postulate{\isacharunderscore}{\kern0pt}pos\ assms\ \isakeywordONE{by}\isamarkupfalse%
+\ blast%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Exemple complet pour les nombres premiers 29 31 37 et 41.%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ n{\isadigit{2}}{\isadigit{9}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ nat\ \isakeywordTWO{where}\ {\isachardoublequoteopen}n{\isadigit{2}}{\isadigit{9}}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isadigit{0}}{\isachardoublequoteclose}\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ n{\isadigit{3}}{\isadigit{1}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ nat\ \isakeywordTWO{where}\ {\isachardoublequoteopen}n{\isadigit{3}}{\isadigit{1}}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isadigit{1}}{\isachardoublequoteclose}\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ n{\isadigit{3}}{\isadigit{7}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ nat\ \isakeywordTWO{where}\ {\isachardoublequoteopen}n{\isadigit{3}}{\isadigit{7}}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isadigit{2}}{\isachardoublequoteclose}\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ n{\isadigit{4}}{\isadigit{1}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ nat\ \isakeywordTWO{where}\ {\isachardoublequoteopen}n{\isadigit{4}}{\isadigit{1}}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isadigit{3}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ D{\isadigit{2}}{\isadigit{9}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\ {\isachardoublequoteopen}D{\isadigit{2}}{\isadigit{9}}\ {\isacharequal}{\kern0pt}\ {\isadigit{2}}{\isadigit{5}}{\isadigit{6}}{\isachardoublequoteclose}\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ D{\isadigit{3}}{\isadigit{1}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\ {\isachardoublequoteopen}D{\isadigit{3}}{\isadigit{1}}\ {\isacharequal}{\kern0pt}\ {\isadigit{5}}\ {\isacharasterisk}{\kern0pt}\ {\isadigit{2}}{\isadigit{5}}{\isadigit{6}}{\isachardoublequoteclose}\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ D{\isadigit{3}}{\isadigit{7}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\ {\isachardoublequoteopen}D{\isadigit{3}}{\isadigit{7}}\ {\isacharequal}{\kern0pt}\ {\isadigit{9}}\ {\isacharasterisk}{\kern0pt}\ {\isadigit{2}}{\isadigit{5}}{\isadigit{6}}\ {\isacharplus}{\kern0pt}\ {\isadigit{5}}\ {\isacharasterisk}{\kern0pt}\ {\isadigit{3}}{\isadigit{8}}{\isadigit{4}}{\isachardoublequoteclose}\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ D{\isadigit{4}}{\isadigit{1}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\ {\isachardoublequoteopen}D{\isadigit{4}}{\isadigit{1}}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isadigit{3}}\ {\isacharasterisk}{\kern0pt}\ {\isadigit{2}}{\isadigit{5}}{\isadigit{6}}\ {\isacharplus}{\kern0pt}\ {\isadigit{9}}\ {\isacharasterisk}{\kern0pt}\ {\isadigit{3}}{\isadigit{8}}{\isadigit{4}}\ {\isacharplus}{\kern0pt}\ {\isadigit{5}}\ {\isacharasterisk}{\kern0pt}\ {\isadigit{7}}{\isadigit{6}}{\isadigit{8}}{\isachardoublequoteclose}%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Valeur des somme A et B pour n.%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{lemma}\isamarkupfalse%
+\ SA{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{0}}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}SA\ n{\isadigit{2}}{\isadigit{9}}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isadigit{6}}{\isadigit{6}}{\isadigit{2}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ n{\isadigit{2}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}def\ SA{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ SB{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{0}}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}SB\ n{\isadigit{2}}{\isadigit{9}}\ {\isacharequal}{\kern0pt}\ {\isadigit{3}}{\isadigit{2}}{\isadigit{6}}{\isadigit{2}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ n{\isadigit{2}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}def\ SB{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ SA{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{1}}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}SA\ n{\isadigit{3}}{\isadigit{1}}\ {\isacharequal}{\kern0pt}\ {\isadigit{3}}{\isadigit{3}}{\isadigit{2}}{\isadigit{6}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ n{\isadigit{3}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}def\ SA{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ SB{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{1}}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}SB\ n{\isadigit{3}}{\isadigit{1}}\ {\isacharequal}{\kern0pt}\ {\isadigit{6}}{\isadigit{5}}{\isadigit{9}}{\isadigit{0}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ n{\isadigit{3}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}def\ SB{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ SA{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{2}}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}SA\ n{\isadigit{3}}{\isadigit{7}}\ {\isacharequal}{\kern0pt}\ {\isadigit{6}}{\isadigit{6}}{\isadigit{5}}{\isadigit{4}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ n{\isadigit{3}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}def\ SA{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ SB{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{2}}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}SB\ n{\isadigit{3}}{\isadigit{7}}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isadigit{3}}{\isadigit{2}}{\isadigit{4}}{\isadigit{6}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ n{\isadigit{3}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}def\ SB{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ SA{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{3}}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}SA\ n{\isadigit{4}}{\isadigit{1}}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isadigit{3}}{\isadigit{3}}{\isadigit{1}}{\isadigit{0}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ n{\isadigit{4}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}def\ SA{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ SB{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{3}}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}SB\ n{\isadigit{4}}{\isadigit{1}}\ {\isacharequal}{\kern0pt}\ {\isadigit{2}}{\isadigit{6}}{\isadigit{5}}{\isadigit{5}}{\isadigit{8}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ n{\isadigit{4}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}def\ SB{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}calc{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{9}}{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}digamma{\isacharunderscore}{\kern0pt}calc\ n{\isadigit{2}}{\isadigit{9}}\ {\isadigit{2}}{\isadigit{9}}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isadigit{4}}{\isadigit{0}}{\isadigit{6}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}calc{\isacharunderscore}{\kern0pt}def\ n{\isadigit{2}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}def\ SB{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}calc{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isadigit{1}}{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}digamma{\isacharunderscore}{\kern0pt}calc\ n{\isadigit{3}}{\isadigit{1}}\ {\isadigit{3}}{\isadigit{1}}\ {\isacharequal}{\kern0pt}\ {\isadigit{4}}{\isadigit{6}}{\isadigit{0}}{\isadigit{6}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}calc{\isacharunderscore}{\kern0pt}def\ n{\isadigit{3}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}def\ SB{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}calc{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isadigit{7}}{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}digamma{\isacharunderscore}{\kern0pt}calc\ n{\isadigit{3}}{\isadigit{7}}\ {\isadigit{3}}{\isadigit{7}}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isadigit{0}}{\isadigit{8}}{\isadigit{7}}{\isadigit{8}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}calc{\isacharunderscore}{\kern0pt}def\ n{\isadigit{3}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}def\ SB{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}calc{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isadigit{1}}{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}digamma{\isacharunderscore}{\kern0pt}calc\ n{\isadigit{4}}{\isadigit{1}}\ {\isadigit{4}}{\isadigit{1}}\ {\isacharequal}{\kern0pt}\ {\isadigit{2}}{\isadigit{3}}{\isadigit{9}}{\isadigit{3}}{\isadigit{4}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}calc{\isacharunderscore}{\kern0pt}def\ n{\isadigit{4}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}def\ SB{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ relation{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{9}}{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}digamma{\isacharunderscore}{\kern0pt}calc\ n{\isadigit{2}}{\isadigit{9}}\ {\isadigit{2}}{\isadigit{9}}\ {\isacharequal}{\kern0pt}\ SA\ n{\isadigit{2}}{\isadigit{9}}\ {\isacharminus}{\kern0pt}\ D{\isadigit{2}}{\isadigit{9}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}calc{\isacharunderscore}{\kern0pt}def\ SA{\isacharunderscore}{\kern0pt}def\ SB{\isacharunderscore}{\kern0pt}def\ n{\isadigit{2}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}def\ D{\isadigit{2}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ relation{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isadigit{1}}{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}digamma{\isacharunderscore}{\kern0pt}calc\ n{\isadigit{3}}{\isadigit{1}}\ {\isadigit{3}}{\isadigit{1}}\ {\isacharequal}{\kern0pt}\ SA\ n{\isadigit{3}}{\isadigit{1}}\ {\isacharplus}{\kern0pt}\ D{\isadigit{3}}{\isadigit{1}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}calc{\isacharunderscore}{\kern0pt}def\ SA{\isacharunderscore}{\kern0pt}def\ SB{\isacharunderscore}{\kern0pt}def\ n{\isadigit{3}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}def\ D{\isadigit{3}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ relation{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isadigit{7}}{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}digamma{\isacharunderscore}{\kern0pt}calc\ n{\isadigit{3}}{\isadigit{7}}\ {\isadigit{3}}{\isadigit{7}}\ {\isacharequal}{\kern0pt}\ SA\ n{\isadigit{3}}{\isadigit{7}}\ {\isacharplus}{\kern0pt}\ D{\isadigit{3}}{\isadigit{7}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}calc{\isacharunderscore}{\kern0pt}def\ SA{\isacharunderscore}{\kern0pt}def\ SB{\isacharunderscore}{\kern0pt}def\ n{\isadigit{3}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}def\ D{\isadigit{3}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+\isanewline
+%
+\endisadelimproof
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ relation{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isadigit{1}}{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}digamma{\isacharunderscore}{\kern0pt}calc\ n{\isadigit{4}}{\isadigit{1}}\ {\isadigit{4}}{\isadigit{1}}\ {\isacharequal}{\kern0pt}\ SA\ n{\isadigit{4}}{\isadigit{1}}\ {\isacharplus}{\kern0pt}\ D{\isadigit{4}}{\isadigit{1}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}calc{\isacharunderscore}{\kern0pt}def\ SA{\isacharunderscore}{\kern0pt}def\ SB{\isacharunderscore}{\kern0pt}def\ n{\isadigit{4}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}def\ D{\isadigit{4}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Modele spectrale 1/4 : Forme generale des suite A et B.%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\begin{isamarkuptext}%
+Formes generalisees pour le rapport 1/4.
+  On suit les equations :
+    ((241/16)/12 * 4^n) - 4/3
+    ((964/16)/12 * 4^n) - (3073 * (4/3))%
+\end{isamarkuptext}\isamarkuptrue%
+\isakeywordONE{definition}\isamarkupfalse%
+\ A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ n\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{2}}{\isadigit{4}}{\isadigit{1}}\ {\isacharslash}{\kern0pt}\ {\isadigit{1}}{\isadigit{6}}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{1}}{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{4}}{\isacharcircum}{\kern0pt}n{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{4}}\ {\isacharslash}{\kern0pt}\ {\isadigit{3}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ n\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{9}}{\isadigit{6}}{\isadigit{4}}\ {\isacharslash}{\kern0pt}\ {\isadigit{1}}{\isadigit{6}}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{1}}{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{4}}{\isacharcircum}{\kern0pt}n{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{3}}{\isadigit{0}}{\isadigit{7}}{\isadigit{3}}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{4}}\ {\isacharslash}{\kern0pt}\ {\isadigit{3}}{\isacharparenright}{\kern0pt}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ prime{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ {\isasymRightarrow}\ nat\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}prime{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ n\ p\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ n\ {\isacharminus}{\kern0pt}\ {\isacharparenleft}{\kern0pt}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ n\ {\isacharminus}{\kern0pt}\ {\isadigit{4}}{\isadigit{0}}{\isadigit{9}}{\isadigit{6}}\ {\isacharasterisk}{\kern0pt}\ real\ p{\isacharparenright}{\kern0pt}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{4}}{\isadigit{0}}{\isadigit{9}}{\isadigit{6}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ prime{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}identity{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}prime{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ n\ p\ {\isacharequal}{\kern0pt}\ real\ p{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ prime{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Axiomatisation spectral 1/4%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{axiomatization}\isamarkupfalse%
+\ \isakeywordTWO{where}\isanewline
+\ \ spectral{\isacharunderscore}{\kern0pt}postulate{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharcolon}{\kern0pt}\isanewline
+\ \ \ \ {\isachardoublequoteopen}{\isasymAnd}n\ p{\isachardot}{\kern0pt}\ n\ {\isachargreater}{\kern0pt}\ {\isadigit{0}}{\isacharequal}{\kern0pt}{\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}rime\ p\ {\isacharequal}{\kern0pt}{\isacharequal}{\kern0pt}prime{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ n\ p\ {\isacharequal}{\kern0pt}\ real\ p{\isachardoublequoteclose}\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ prime{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}for{\isacharunderscore}{\kern0pt}primes{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}n\ {\isachargreater}{\kern0pt}\ {\isadigit{0}}{\isachardoublequoteclose}\ {\isachardoublequoteopen}prime\ p{\isachardoublequoteclose}\isanewline
+\ \ \isakeywordTWO{shows}\ {\isachardoublequoteopen}prime{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ n\ p\ {\isacharequal}{\kern0pt}\ real\ p{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ spectral{\isacharunderscore}{\kern0pt}postulate{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ assms\ \isakeywordONE{by}\isamarkupfalse%
+\ blast%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Modèle spectral 1/4: Sommes de suite A et B, Digamma, Digamma calcule et determination du premier 947.%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\begin{isamarkuptext}%
+Donnees numeriques globales pour le modele 1/4 :
+  - Somme de la suite A : 1316180
+  - Somme de la suite B : 5260628
+  - Digamma : 65536
+  - Digamma calcule : 1316180 + 65536 = 1381716
+  - (5260628 - 1381716) / 4096 = 947 (premier)%
+\end{isamarkuptext}\isamarkuptrue%
+\isakeywordONE{definition}\isamarkupfalse%
+\ suite{\isacharunderscore}{\kern0pt}A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}somme\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}suite{\isacharunderscore}{\kern0pt}A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}somme\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isadigit{3}}{\isadigit{1}}{\isadigit{6}}{\isadigit{1}}{\isadigit{8}}{\isadigit{0}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ suite{\isacharunderscore}{\kern0pt}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}somme\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}suite{\isacharunderscore}{\kern0pt}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}somme\ {\isacharequal}{\kern0pt}\ {\isadigit{5}}{\isadigit{2}}{\isadigit{6}}{\isadigit{0}}{\isadigit{6}}{\isadigit{2}}{\isadigit{8}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}digamma{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ {\isacharequal}{\kern0pt}\ {\isadigit{6}}{\isadigit{5}}{\isadigit{5}}{\isadigit{3}}{\isadigit{6}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}calcule{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}digamma{\isacharunderscore}{\kern0pt}calcule{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ {\isacharequal}{\kern0pt}\ suite{\isacharunderscore}{\kern0pt}A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}somme\ {\isacharplus}{\kern0pt}\ digamma{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ preuve{\isacharunderscore}{\kern0pt}premier{\isacharunderscore}{\kern0pt}{\isadigit{9}}{\isadigit{4}}{\isadigit{7}}{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}{\isacharparenleft}{\kern0pt}suite{\isacharunderscore}{\kern0pt}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}somme\ {\isacharminus}{\kern0pt}\ digamma{\isacharunderscore}{\kern0pt}calcule{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{4}}{\isadigit{0}}{\isadigit{9}}{\isadigit{6}}\ {\isacharequal}{\kern0pt}\ {\isadigit{9}}{\isadigit{4}}{\isadigit{7}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ suite{\isacharunderscore}{\kern0pt}A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}somme{\isacharunderscore}{\kern0pt}def\ suite{\isacharunderscore}{\kern0pt}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}somme{\isacharunderscore}{\kern0pt}def\isanewline
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ digamma{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}def\ digamma{\isacharunderscore}{\kern0pt}calcule{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}def{\isacharparenright}{\kern0pt}%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Rapport 1/3 forme generaliser pour les suites A et B.%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\begin{isamarkuptext}%
+Formes généralisées pour le rapport 1/3.
+  On suit les équations :
+    ((73/9)/12 * 3^n) - 1.5
+    ((219/9)/12 * 3^n) - (487 * 1.5)%
+\end{isamarkuptext}\isamarkuptrue%
+\isakeywordONE{definition}\isamarkupfalse%
+\ A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ n\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{7}}{\isadigit{3}}\ {\isacharslash}{\kern0pt}\ {\isadigit{9}}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{1}}{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{3}}{\isacharcircum}{\kern0pt}n{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ {\isadigit{1}}{\isachardot}{\kern0pt}{\isadigit{5}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ n\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{2}}{\isadigit{1}}{\isadigit{9}}\ {\isacharslash}{\kern0pt}\ {\isadigit{9}}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{1}}{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{3}}{\isacharcircum}{\kern0pt}n{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{4}}{\isadigit{8}}{\isadigit{7}}\ {\isacharasterisk}{\kern0pt}\ {\isadigit{1}}{\isachardot}{\kern0pt}{\isadigit{5}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ prime{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ {\isasymRightarrow}\ nat\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}prime{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ n\ p\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ n\ {\isacharminus}{\kern0pt}\ {\isacharparenleft}{\kern0pt}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ n\ {\isacharminus}{\kern0pt}\ {\isadigit{7}}{\isadigit{2}}{\isadigit{9}}\ {\isacharasterisk}{\kern0pt}\ real\ p{\isacharparenright}{\kern0pt}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{7}}{\isadigit{2}}{\isadigit{9}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ prime{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}identity{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}prime{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ n\ p\ {\isacharequal}{\kern0pt}\ real\ p{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ prime{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Axiomatisation rapport 1/3.%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{axiomatization}\isamarkupfalse%
+\ \isakeywordTWO{where}\isanewline
+\ \ spectral{\isacharunderscore}{\kern0pt}postulate{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharcolon}{\kern0pt}\isanewline
+\ \ \ \ {\isachardoublequoteopen}{\isasymAnd}n\ p{\isachardot}{\kern0pt}\ n\ {\isachargreater}{\kern0pt}\ {\isadigit{0}}{\isacharequal}{\kern0pt}{\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}prime\ p{\isacharequal}{\kern0pt}{\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}prime{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ n\ p\ {\isacharequal}{\kern0pt}\ real\ p{\isachardoublequoteclose}\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ prime{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}for{\isacharunderscore}{\kern0pt}primes{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}n\ {\isachargreater}{\kern0pt}\ {\isadigit{0}}{\isachardoublequoteclose}\ {\isachardoublequoteopen}prime\ p{\isachardoublequoteclose}\isanewline
+\ \ \isakeywordTWO{shows}\ {\isachardoublequoteopen}prime{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ n\ p\ {\isacharequal}{\kern0pt}\ real\ p{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ spectral{\isacharunderscore}{\kern0pt}postulate{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ assms\ \isakeywordONE{by}\isamarkupfalse%
+\ blast%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Rapport spectal 1/3 validation numerique pour les suite A et B, Digamma, Digamma calcule et la determination du premier 227.%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ suite{\isacharunderscore}{\kern0pt}A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}somme\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}suite{\isacharunderscore}{\kern0pt}A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}somme\ {\isacharequal}{\kern0pt}\ {\isadigit{7}}{\isadigit{9}}{\isadigit{8}}{\isadigit{2}}{\isadigit{4}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ suite{\isacharunderscore}{\kern0pt}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}somme\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}suite{\isacharunderscore}{\kern0pt}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}somme\ {\isacharequal}{\kern0pt}\ {\isadigit{2}}{\isadigit{3}}{\isadigit{8}}{\isadigit{7}}{\isadigit{4}}{\isadigit{6}}{\isachardoublequoteclose}%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Rapport 1/3%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}digamma{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ {\isacharequal}{\kern0pt}\ {\isadigit{6}}{\isadigit{5}}{\isadigit{6}}{\isadigit{1}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}calcule{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}digamma{\isacharunderscore}{\kern0pt}calcule{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ {\isacharequal}{\kern0pt}\ suite{\isacharunderscore}{\kern0pt}A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}somme\ {\isacharminus}{\kern0pt}\ digamma{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ preuve{\isacharunderscore}{\kern0pt}premier{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{2}}{\isadigit{7}}{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}{\isacharparenleft}{\kern0pt}suite{\isacharunderscore}{\kern0pt}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}somme\ {\isacharminus}{\kern0pt}\ digamma{\isacharunderscore}{\kern0pt}calcule{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{7}}{\isadigit{2}}{\isadigit{9}}\ {\isacharequal}{\kern0pt}\ {\isadigit{2}}{\isadigit{2}}{\isadigit{7}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ suite{\isacharunderscore}{\kern0pt}A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}somme{\isacharunderscore}{\kern0pt}def\ suite{\isacharunderscore}{\kern0pt}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}somme{\isacharunderscore}{\kern0pt}def\isanewline
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ digamma{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}def\ digamma{\isacharunderscore}{\kern0pt}calcule{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}def{\isacharparenright}{\kern0pt}%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Rapport spectral constant 1/3 et 1/4.%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\begin{isamarkuptext}%
+Définition du Rapport Spectral pour les modèles 1/3 et 1/4.%
+\end{isamarkuptext}\isamarkuptrue%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Rapport spectral 1/3 Validation généralisé.%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ RsP{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ nat\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}RsP{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ n{\isadigit{1}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ {\isacharparenleft}{\kern0pt}A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ n{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\isanewline
+\ \ \ \ {\isacharparenleft}{\kern0pt}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ n{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{theorem}\isamarkupfalse%
+\ RsP{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}tiers{\isacharunderscore}{\kern0pt}constant{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}n{\isadigit{1}}\ {\isachargreater}{\kern0pt}\ {\isadigit{0}}{\isachardoublequoteclose}\ \isakeywordTWO{and}\ {\isachardoublequoteopen}n{\isadigit{2}}\ {\isachargreater}{\kern0pt}\ {\isadigit{0}}{\isachardoublequoteclose}\ \isakeywordTWO{and}\ {\isachardoublequoteopen}n{\isadigit{1}}\ {\isachartilde}{\kern0pt}{\isacharequal}{\kern0pt}\ n{\isadigit{2}}{\isachardoublequoteclose}\isanewline
+\ \ \isakeywordTWO{shows}\ {\isachardoublequoteopen}RsP{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ n{\isadigit{1}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isacharslash}{\kern0pt}{\isadigit{3}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{proof}\isamarkupfalse%
+\ {\isacharminus}{\kern0pt}\isanewline
+\ \ \isakeywordONE{have}\isamarkupfalse%
+\ diff{\isacharunderscore}{\kern0pt}A{\isacharcolon}{\kern0pt}\isanewline
+\ \ \ \ {\isachardoublequoteopen}A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{7}}{\isadigit{3}}{\isacharslash}{\kern0pt}{\isadigit{9}}{\isacharparenright}{\kern0pt}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{3}}{\isacharcircum}{\kern0pt}n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ {\isadigit{3}}{\isacharcircum}{\kern0pt}n{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{unfolding}\isamarkupfalse%
+\ A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ algebra{\isacharunderscore}{\kern0pt}simps{\isacharparenright}{\kern0pt}\isanewline
+\isanewline
+\ \ \isakeywordONE{have}\isamarkupfalse%
+\ diff{\isacharunderscore}{\kern0pt}B{\isacharcolon}{\kern0pt}\isanewline
+\ \ \ \ {\isachardoublequoteopen}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{2}}{\isadigit{1}}{\isadigit{9}}{\isacharslash}{\kern0pt}{\isadigit{9}}{\isacharparenright}{\kern0pt}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{3}}{\isacharcircum}{\kern0pt}n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ {\isadigit{3}}{\isacharcircum}{\kern0pt}n{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{unfolding}\isamarkupfalse%
+\ B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ algebra{\isacharunderscore}{\kern0pt}simps{\isacharparenright}{\kern0pt}\isanewline
+\isanewline
+\ \ \isakeywordONE{have}\isamarkupfalse%
+\ {\isachardoublequoteopen}RsP{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ n{\isadigit{1}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{7}}{\isadigit{3}}{\isacharslash}{\kern0pt}{\isadigit{9}}{\isacharparenright}{\kern0pt}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{3}}{\isacharcircum}{\kern0pt}n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ {\isadigit{3}}{\isacharcircum}{\kern0pt}n{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\isanewline
+\ \ \ \ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{2}}{\isadigit{1}}{\isadigit{9}}{\isacharslash}{\kern0pt}{\isadigit{9}}{\isacharparenright}{\kern0pt}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{3}}{\isacharcircum}{\kern0pt}n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ {\isadigit{3}}{\isacharcircum}{\kern0pt}n{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{unfolding}\isamarkupfalse%
+\ RsP{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ diff{\isacharunderscore}{\kern0pt}A\ diff{\isacharunderscore}{\kern0pt}B{\isacharparenright}{\kern0pt}\isanewline
+\isanewline
+\ \ \isakeywordONE{also}\isamarkupfalse%
+\ \isakeywordONE{have}\isamarkupfalse%
+\ {\isachardoublequoteopen}{\isachardot}{\kern0pt}{\isachardot}{\kern0pt}{\isachardot}{\kern0pt}\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{7}}{\isadigit{3}}{\isacharslash}{\kern0pt}{\isadigit{9}}{\isacharparenright}{\kern0pt}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{2}}{\isadigit{1}}{\isadigit{9}}{\isacharslash}{\kern0pt}{\isadigit{9}}{\isacharparenright}{\kern0pt}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{using}\isamarkupfalse%
+\ assms\ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ field{\isacharunderscore}{\kern0pt}simps{\isacharparenright}{\kern0pt}\isanewline
+\isanewline
+\ \ \isakeywordONE{also}\isamarkupfalse%
+\ \isakeywordONE{have}\isamarkupfalse%
+\ {\isachardoublequoteopen}{\isachardot}{\kern0pt}{\isachardot}{\kern0pt}{\isachardot}{\kern0pt}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isacharslash}{\kern0pt}{\isadigit{3}}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{by}\isamarkupfalse%
+\ simp\isanewline
+\isanewline
+\ \ \isakeywordONE{finally}\isamarkupfalse%
+\ \isakeywordTHREE{show}\isamarkupfalse%
+\ {\isacharquery}{\kern0pt}thesis\ \isakeywordONE{{\isachardot}{\kern0pt}}\isamarkupfalse%
+\isanewline
+\isakeywordONE{qed}\isamarkupfalse%
+%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Rapport spectral constant 1/4.%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ RsP{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ nat\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}RsP{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ n{\isadigit{1}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ {\isacharparenleft}{\kern0pt}A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ n{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\isanewline
+\ \ \ \ {\isacharparenleft}{\kern0pt}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ n{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Rapport spectral 1/4 validation généralisé.%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{theorem}\isamarkupfalse%
+\ RsP{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}quart{\isacharunderscore}{\kern0pt}constant{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}n{\isadigit{1}}\ {\isachargreater}{\kern0pt}\ {\isadigit{0}}{\isachardoublequoteclose}\ \isakeywordTWO{and}\ {\isachardoublequoteopen}n{\isadigit{2}}\ {\isachargreater}{\kern0pt}\ {\isadigit{0}}{\isachardoublequoteclose}\ \isakeywordTWO{and}\ {\isachardoublequoteopen}n{\isadigit{1}}\ {\isachartilde}{\kern0pt}{\isacharequal}{\kern0pt}\ n{\isadigit{2}}{\isachardoublequoteclose}\isanewline
+\ \ \isakeywordTWO{shows}\ {\isachardoublequoteopen}RsP{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ n{\isadigit{1}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isacharslash}{\kern0pt}{\isadigit{4}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{proof}\isamarkupfalse%
+\ {\isacharminus}{\kern0pt}\isanewline
+\ \ \isakeywordONE{have}\isamarkupfalse%
+\ diff{\isacharunderscore}{\kern0pt}A{\isacharcolon}{\kern0pt}\isanewline
+\ \ \ \ {\isachardoublequoteopen}A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{2}}{\isadigit{4}}{\isadigit{1}}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{6}}{\isacharparenright}{\kern0pt}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{4}}{\isacharcircum}{\kern0pt}n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ {\isadigit{4}}{\isacharcircum}{\kern0pt}n{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{unfolding}\isamarkupfalse%
+\ A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ algebra{\isacharunderscore}{\kern0pt}simps{\isacharparenright}{\kern0pt}\isanewline
+\isanewline
+\ \ \isakeywordONE{have}\isamarkupfalse%
+\ diff{\isacharunderscore}{\kern0pt}B{\isacharcolon}{\kern0pt}\isanewline
+\ \ \ \ {\isachardoublequoteopen}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{9}}{\isadigit{6}}{\isadigit{4}}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{6}}{\isacharparenright}{\kern0pt}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{4}}{\isacharcircum}{\kern0pt}n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ {\isadigit{4}}{\isacharcircum}{\kern0pt}n{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{unfolding}\isamarkupfalse%
+\ B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ algebra{\isacharunderscore}{\kern0pt}simps{\isacharparenright}{\kern0pt}\isanewline
+\isanewline
+\ \ \isakeywordONE{have}\isamarkupfalse%
+\ {\isachardoublequoteopen}RsP{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ n{\isadigit{1}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{2}}{\isadigit{4}}{\isadigit{1}}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{6}}{\isacharparenright}{\kern0pt}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{4}}{\isacharcircum}{\kern0pt}n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ {\isadigit{4}}{\isacharcircum}{\kern0pt}n{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\isanewline
+\ \ \ \ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{9}}{\isadigit{6}}{\isadigit{4}}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{6}}{\isacharparenright}{\kern0pt}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{4}}{\isacharcircum}{\kern0pt}n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ {\isadigit{4}}{\isacharcircum}{\kern0pt}n{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{unfolding}\isamarkupfalse%
+\ RsP{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ diff{\isacharunderscore}{\kern0pt}A\ diff{\isacharunderscore}{\kern0pt}B{\isacharparenright}{\kern0pt}\isanewline
+\isanewline
+\ \ \isakeywordONE{also}\isamarkupfalse%
+\ \isakeywordONE{have}\isamarkupfalse%
+\ {\isachardoublequoteopen}{\isachardot}{\kern0pt}{\isachardot}{\kern0pt}{\isachardot}{\kern0pt}\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{2}}{\isadigit{4}}{\isadigit{1}}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{6}}{\isacharparenright}{\kern0pt}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{9}}{\isadigit{6}}{\isadigit{4}}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{6}}{\isacharparenright}{\kern0pt}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{using}\isamarkupfalse%
+\ assms\ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ field{\isacharunderscore}{\kern0pt}simps{\isacharparenright}{\kern0pt}\isanewline
+\isanewline
+\ \ \isakeywordONE{also}\isamarkupfalse%
+\ \isakeywordONE{have}\isamarkupfalse%
+\ {\isachardoublequoteopen}{\isachardot}{\kern0pt}{\isachardot}{\kern0pt}{\isachardot}{\kern0pt}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isacharslash}{\kern0pt}{\isadigit{4}}{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{by}\isamarkupfalse%
+\ simp\isanewline
+\isanewline
+\ \ \isakeywordONE{finally}\isamarkupfalse%
+\ \isakeywordTHREE{show}\isamarkupfalse%
+\ {\isacharquery}{\kern0pt}thesis\ \isakeywordONE{{\isachardot}{\kern0pt}}\isamarkupfalse%
+\isanewline
+\isakeywordONE{qed}\isamarkupfalse%
+%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Suites negatives : equations spectrales%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ SA{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SA{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq\ n\ {\isacharequal}{\kern0pt}\ {\isadigit{3}}{\isachardot}{\kern0pt}{\isadigit{2}}{\isadigit{5}}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{2}}\ powr\ n{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ {\isadigit{2}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ SB{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SB{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq\ n\ {\isacharequal}{\kern0pt}\ {\isadigit{6}}{\isachardot}{\kern0pt}{\isadigit{5}}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{2}}\ powr\ n{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ {\isadigit{6}}{\isadigit{6}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}calc\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}digamma{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}calc\ n\ p\ {\isacharequal}{\kern0pt}\ SB{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq\ n\ {\isacharminus}{\kern0pt}\ {\isadigit{6}}{\isadigit{4}}\ {\isacharasterisk}{\kern0pt}\ p{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}calc{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}alt{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}digamma{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}calc\ n\ p\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}SB{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq\ n\ {\isacharslash}{\kern0pt}\ {\isadigit{6}}{\isadigit{4}}\ {\isacharminus}{\kern0pt}\ p{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isadigit{6}}{\isadigit{4}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ digamma{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}calc{\isacharunderscore}{\kern0pt}def\ SB{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq{\isacharunderscore}{\kern0pt}def\isanewline
+\ \ \isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ field{\isacharunderscore}{\kern0pt}simps{\isacharparenright}{\kern0pt}%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Rapport spectral 1/2 negatif%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ RsP{\isacharunderscore}{\kern0pt}neg\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}RsP{\isacharunderscore}{\kern0pt}neg\ n{\isadigit{1}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}SA{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ SA{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq\ n{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}SB{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ SB{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq\ n{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{axiomatization}\isamarkupfalse%
+\ \isakeywordTWO{where}\isanewline
+\ \ spectral{\isacharunderscore}{\kern0pt}ratio{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}demi{\isacharcolon}{\kern0pt}\isanewline
+\ \ \ \ {\isachardoublequoteopen}{\isasymlbrakk}\ n{\isadigit{1}}\ {\isasymle}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isacharsemicolon}{\kern0pt}\ n{\isadigit{2}}\ {\isasymle}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isacharsemicolon}{\kern0pt}\ n{\isadigit{1}}\ {\isasymnoteq}\ n{\isadigit{2}}\ {\isasymrbrakk}\ {\isasymLongrightarrow}\ RsP{\isacharunderscore}{\kern0pt}neg\ n{\isadigit{1}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isacharslash}{\kern0pt}{\isadigit{2}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ RsP{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}demi{\isacharunderscore}{\kern0pt}general{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}n{\isadigit{1}}\ {\isasymle}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isachardoublequoteclose}\ {\isachardoublequoteopen}n{\isadigit{2}}\ {\isasymle}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isachardoublequoteclose}\ {\isachardoublequoteopen}n{\isadigit{1}}\ {\isasymnoteq}\ n{\isadigit{2}}{\isachardoublequoteclose}\isanewline
+\ \ \isakeywordTWO{shows}\ {\isachardoublequoteopen}RsP{\isacharunderscore}{\kern0pt}neg\ n{\isadigit{1}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isacharslash}{\kern0pt}{\isadigit{2}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ spectral{\isacharunderscore}{\kern0pt}ratio{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}demi\ assms\ \isakeywordONE{by}\isamarkupfalse%
+\ blast%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Geometrie spectrale : asymetries%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ indice{\isacharunderscore}{\kern0pt}valide\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}int\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}indice{\isacharunderscore}{\kern0pt}valide\ n\ {\isasymlongleftrightarrow}\ {\isacharparenleft}{\kern0pt}n\ {\isasymge}\ {\isadigit{1}}\ {\isasymor}\ n\ {\isasymle}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ liste{\isacharunderscore}{\kern0pt}strictement{\isacharunderscore}{\kern0pt}croissante\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}int\ list\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}liste{\isacharunderscore}{\kern0pt}strictement{\isacharunderscore}{\kern0pt}croissante\ xs\ {\isasymlongleftrightarrow}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isasymforall}i\ j{\isachardot}{\kern0pt}\ i\ {\isacharless}{\kern0pt}\ j\ {\isasymand}\ j\ {\isacharless}{\kern0pt}\ length\ xs\ {\isasymlongrightarrow}\ xs\ {\isacharbang}{\kern0pt}\ i\ {\isacharless}{\kern0pt}\ xs\ {\isacharbang}{\kern0pt}\ j{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ asymetrique{\isacharunderscore}{\kern0pt}ordonnee\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}int\ list\ {\isasymRightarrow}\ int\ list\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}asymetrique{\isacharunderscore}{\kern0pt}ordonnee\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices\ {\isasymlongleftrightarrow}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isasymforall}n\ {\isasymin}\ set\ A{\isacharunderscore}{\kern0pt}indices{\isachardot}{\kern0pt}\ indice{\isacharunderscore}{\kern0pt}valide\ n{\isacharparenright}{\kern0pt}\ {\isasymand}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isasymforall}n\ {\isasymin}\ set\ B{\isacharunderscore}{\kern0pt}indices{\isachardot}{\kern0pt}\ indice{\isacharunderscore}{\kern0pt}valide\ n{\isacharparenright}{\kern0pt}\ {\isasymand}\isanewline
+\ \ \ \ \ liste{\isacharunderscore}{\kern0pt}strictement{\isacharunderscore}{\kern0pt}croissante\ A{\isacharunderscore}{\kern0pt}indices\ {\isasymand}\isanewline
+\ \ \ \ \ liste{\isacharunderscore}{\kern0pt}strictement{\isacharunderscore}{\kern0pt}croissante\ B{\isacharunderscore}{\kern0pt}indices\ {\isasymand}\isanewline
+\ \ \ \ \ A{\isacharunderscore}{\kern0pt}indices\ {\isasymnoteq}\ {\isacharbrackleft}{\kern0pt}{\isacharbrackright}{\kern0pt}\ {\isasymand}\isanewline
+\ \ \ \ \ B{\isacharunderscore}{\kern0pt}indices\ {\isasymnoteq}\ {\isacharbrackleft}{\kern0pt}{\isacharbrackright}{\kern0pt}\ {\isasymand}\isanewline
+\ \ \ \ \ last\ A{\isacharunderscore}{\kern0pt}indices\ {\isacharless}{\kern0pt}\ hd\ B{\isacharunderscore}{\kern0pt}indices\ {\isasymand}\isanewline
+\ \ \ \ \ length\ B{\isacharunderscore}{\kern0pt}indices\ {\isacharequal}{\kern0pt}\ length\ A{\isacharunderscore}{\kern0pt}indices\ {\isacharplus}{\kern0pt}\ {\isadigit{1}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ asymetrique{\isacharunderscore}{\kern0pt}chaotique\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}int\ list\ {\isasymRightarrow}\ int\ list\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}asymetrique{\isacharunderscore}{\kern0pt}chaotique\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices\ {\isasymlongleftrightarrow}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isasymforall}n\ {\isasymin}\ set\ A{\isacharunderscore}{\kern0pt}indices{\isachardot}{\kern0pt}\ indice{\isacharunderscore}{\kern0pt}valide\ n{\isacharparenright}{\kern0pt}\ {\isasymand}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isasymforall}n\ {\isasymin}\ set\ B{\isacharunderscore}{\kern0pt}indices{\isachardot}{\kern0pt}\ indice{\isacharunderscore}{\kern0pt}valide\ n{\isacharparenright}{\kern0pt}\ {\isasymand}\isanewline
+\ \ \ \ \ length\ A{\isacharunderscore}{\kern0pt}indices\ {\isasymnoteq}\ length\ B{\isacharunderscore}{\kern0pt}indices\ {\isasymand}\isanewline
+\ \ \ \ \ {\isasymnot}\ asymetrique{\isacharunderscore}{\kern0pt}ordonnee\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ asymetrie{\isacharunderscore}{\kern0pt}implique{\isacharunderscore}{\kern0pt}indices{\isacharunderscore}{\kern0pt}valides\ {\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}asymetrique{\isacharunderscore}{\kern0pt}ordonnee\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices\ {\isasymor}\isanewline
+\ \ \ \ \ \ \ \ \ \ \ asymetrique{\isacharunderscore}{\kern0pt}chaotique\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices{\isachardoublequoteclose}\isanewline
+\ \ \isakeywordTWO{shows}\ {\isachardoublequoteopen}{\isacharparenleft}{\kern0pt}{\isasymforall}n\ {\isasymin}\ set\ A{\isacharunderscore}{\kern0pt}indices{\isachardot}{\kern0pt}\ indice{\isacharunderscore}{\kern0pt}valide\ n{\isacharparenright}{\kern0pt}\ {\isasymand}\isanewline
+\ \ \ \ \ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isasymforall}n\ {\isasymin}\ set\ B{\isacharunderscore}{\kern0pt}indices{\isachardot}{\kern0pt}\ indice{\isacharunderscore}{\kern0pt}valide\ n{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{proof}\isamarkupfalse%
+\ {\isacharminus}{\kern0pt}\isanewline
+\ \ \isakeywordONE{from}\isamarkupfalse%
+\ assms\isanewline
+\ \ \isakeywordTHREE{show}\isamarkupfalse%
+\ {\isacharquery}{\kern0pt}thesis\isanewline
+\ \ \isakeywordONE{proof}\isamarkupfalse%
+\isanewline
+\ \ \ \ \isakeywordTHREE{assume}\isamarkupfalse%
+\ h{\isadigit{1}}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}asymetrique{\isacharunderscore}{\kern0pt}ordonnee\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{then}\isamarkupfalse%
+\ \isakeywordTHREE{show}\isamarkupfalse%
+\ {\isacharquery}{\kern0pt}thesis\isanewline
+\ \ \ \ \ \ \isakeywordONE{unfolding}\isamarkupfalse%
+\ asymetrique{\isacharunderscore}{\kern0pt}ordonnee{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ auto\isanewline
+\ \ \isakeywordONE{next}\isamarkupfalse%
+\isanewline
+\ \ \ \ \isakeywordTHREE{assume}\isamarkupfalse%
+\ h{\isadigit{2}}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}asymetrique{\isacharunderscore}{\kern0pt}chaotique\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{then}\isamarkupfalse%
+\ \isakeywordTHREE{show}\isamarkupfalse%
+\ {\isacharquery}{\kern0pt}thesis\isanewline
+\ \ \ \ \ \ \isakeywordONE{unfolding}\isamarkupfalse%
+\ asymetrique{\isacharunderscore}{\kern0pt}chaotique{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ auto\isanewline
+\ \ \isakeywordONE{qed}\isamarkupfalse%
+\isanewline
+\isakeywordONE{qed}\isamarkupfalse%
+%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Methode de comparaison asymetrique pour 1/2 et 1/4%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\begin{isamarkuptext}%
+La methode de comparaison asymetrique relie :
+
+  - des suites de nombres premiers A et B (via leurs indices n),
+  - les equations generales des suites A et B (SA, SB pour 1/2 ; A_1_4, B_1_4 pour 1/4),
+  - et un rapport spectral construit a partir des sommes de blocs.
+
+  Les puissances utilisees dans les equations generales sont egales
+  aux positions (indices) des termes dans les suites, ou a la longueur
+  des blocs consideres. La methode est applicable a tout ensemble
+  de nombres premiers dont la position correspond aux puissances
+  des equations generales A et B.%
+\end{isamarkuptext}\isamarkuptrue%
+%
+\begin{isamarkuptext}%
+Les definitions asymetrique_ordonnee et asymetrique_chaotique
+  existent deja pour des listes d'entiers (int). Pour travailler
+  directement avec les indices naturels des suites SA, SB, A_1_4
+  et B_1_4, on introduit une version analogue sur nat.%
+\end{isamarkuptext}\isamarkuptrue%
+\isakeywordONE{definition}\isamarkupfalse%
+\ indice{\isacharunderscore}{\kern0pt}valide{\isacharunderscore}{\kern0pt}nat\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}indice{\isacharunderscore}{\kern0pt}valide{\isacharunderscore}{\kern0pt}nat\ n\ {\isasymlongleftrightarrow}\ {\isacharparenleft}{\kern0pt}n\ {\isachargreater}{\kern0pt}\ {\isadigit{0}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ liste{\isacharunderscore}{\kern0pt}strictement{\isacharunderscore}{\kern0pt}croissante{\isacharunderscore}{\kern0pt}nat\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ list\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}liste{\isacharunderscore}{\kern0pt}strictement{\isacharunderscore}{\kern0pt}croissante{\isacharunderscore}{\kern0pt}nat\ xs\ {\isasymlongleftrightarrow}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isasymforall}i\ j{\isachardot}{\kern0pt}\ i\ {\isacharless}{\kern0pt}\ j\ {\isasymand}\ j\ {\isacharless}{\kern0pt}\ length\ xs\ {\isasymlongrightarrow}\ xs\ {\isacharbang}{\kern0pt}\ i\ {\isacharless}{\kern0pt}\ xs\ {\isacharbang}{\kern0pt}\ j{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ asymetrique{\isacharunderscore}{\kern0pt}ordonnee{\isacharunderscore}{\kern0pt}nat\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ list\ {\isasymRightarrow}\ nat\ list\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}asymetrique{\isacharunderscore}{\kern0pt}ordonnee{\isacharunderscore}{\kern0pt}nat\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices\ {\isasymlongleftrightarrow}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isasymforall}n\ {\isasymin}\ set\ A{\isacharunderscore}{\kern0pt}indices{\isachardot}{\kern0pt}\ indice{\isacharunderscore}{\kern0pt}valide{\isacharunderscore}{\kern0pt}nat\ n{\isacharparenright}{\kern0pt}\ {\isasymand}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isasymforall}n\ {\isasymin}\ set\ B{\isacharunderscore}{\kern0pt}indices{\isachardot}{\kern0pt}\ indice{\isacharunderscore}{\kern0pt}valide{\isacharunderscore}{\kern0pt}nat\ n{\isacharparenright}{\kern0pt}\ {\isasymand}\isanewline
+\ \ \ \ \ liste{\isacharunderscore}{\kern0pt}strictement{\isacharunderscore}{\kern0pt}croissante{\isacharunderscore}{\kern0pt}nat\ A{\isacharunderscore}{\kern0pt}indices\ {\isasymand}\isanewline
+\ \ \ \ \ liste{\isacharunderscore}{\kern0pt}strictement{\isacharunderscore}{\kern0pt}croissante{\isacharunderscore}{\kern0pt}nat\ B{\isacharunderscore}{\kern0pt}indices\ {\isasymand}\isanewline
+\ \ \ \ \ A{\isacharunderscore}{\kern0pt}indices\ {\isasymnoteq}\ {\isacharbrackleft}{\kern0pt}{\isacharbrackright}{\kern0pt}\ {\isasymand}\isanewline
+\ \ \ \ \ B{\isacharunderscore}{\kern0pt}indices\ {\isasymnoteq}\ {\isacharbrackleft}{\kern0pt}{\isacharbrackright}{\kern0pt}\ {\isasymand}\isanewline
+\ \ \ \ \ last\ A{\isacharunderscore}{\kern0pt}indices\ {\isacharless}{\kern0pt}\ hd\ B{\isacharunderscore}{\kern0pt}indices\ {\isasymand}\isanewline
+\ \ \ \ \ length\ B{\isacharunderscore}{\kern0pt}indices\ {\isacharequal}{\kern0pt}\ length\ A{\isacharunderscore}{\kern0pt}indices\ {\isacharplus}{\kern0pt}\ {\isadigit{1}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ asymetrique{\isacharunderscore}{\kern0pt}chaotique{\isacharunderscore}{\kern0pt}nat\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ list\ {\isasymRightarrow}\ nat\ list\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}asymetrique{\isacharunderscore}{\kern0pt}chaotique{\isacharunderscore}{\kern0pt}nat\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices\ {\isasymlongleftrightarrow}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isasymforall}n\ {\isasymin}\ set\ A{\isacharunderscore}{\kern0pt}indices{\isachardot}{\kern0pt}\ indice{\isacharunderscore}{\kern0pt}valide{\isacharunderscore}{\kern0pt}nat\ n{\isacharparenright}{\kern0pt}\ {\isasymand}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isasymforall}n\ {\isasymin}\ set\ B{\isacharunderscore}{\kern0pt}indices{\isachardot}{\kern0pt}\ indice{\isacharunderscore}{\kern0pt}valide{\isacharunderscore}{\kern0pt}nat\ n{\isacharparenright}{\kern0pt}\ {\isasymand}\isanewline
+\ \ \ \ \ length\ A{\isacharunderscore}{\kern0pt}indices\ {\isasymnoteq}\ length\ B{\isacharunderscore}{\kern0pt}indices\ {\isasymand}\isanewline
+\ \ \ \ \ {\isasymnot}\ asymetrique{\isacharunderscore}{\kern0pt}ordonnee{\isacharunderscore}{\kern0pt}nat\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ asymetrie{\isacharunderscore}{\kern0pt}nat{\isacharunderscore}{\kern0pt}implique{\isacharunderscore}{\kern0pt}indices{\isacharunderscore}{\kern0pt}valides\ {\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}asymetrique{\isacharunderscore}{\kern0pt}ordonnee{\isacharunderscore}{\kern0pt}nat\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices\ {\isasymor}\isanewline
+\ \ \ \ \ \ \ \ \ \ \ asymetrique{\isacharunderscore}{\kern0pt}chaotique{\isacharunderscore}{\kern0pt}nat\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices{\isachardoublequoteclose}\isanewline
+\ \ \isakeywordTWO{shows}\ {\isachardoublequoteopen}{\isacharparenleft}{\kern0pt}{\isasymforall}n\ {\isasymin}\ set\ A{\isacharunderscore}{\kern0pt}indices{\isachardot}{\kern0pt}\ indice{\isacharunderscore}{\kern0pt}valide{\isacharunderscore}{\kern0pt}nat\ n{\isacharparenright}{\kern0pt}\ {\isasymand}\isanewline
+\ \ \ \ \ \ \ \ \ {\isacharparenleft}{\kern0pt}{\isasymforall}n\ {\isasymin}\ set\ B{\isacharunderscore}{\kern0pt}indices{\isachardot}{\kern0pt}\ indice{\isacharunderscore}{\kern0pt}valide{\isacharunderscore}{\kern0pt}nat\ n{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{proof}\isamarkupfalse%
+\ {\isacharminus}{\kern0pt}\isanewline
+\ \ \isakeywordONE{from}\isamarkupfalse%
+\ assms\isanewline
+\ \ \isakeywordTHREE{show}\isamarkupfalse%
+\ {\isacharquery}{\kern0pt}thesis\isanewline
+\ \ \isakeywordONE{proof}\isamarkupfalse%
+\isanewline
+\ \ \ \ \isakeywordTHREE{assume}\isamarkupfalse%
+\ h{\isadigit{1}}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}asymetrique{\isacharunderscore}{\kern0pt}ordonnee{\isacharunderscore}{\kern0pt}nat\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{then}\isamarkupfalse%
+\ \isakeywordTHREE{show}\isamarkupfalse%
+\ {\isacharquery}{\kern0pt}thesis\isanewline
+\ \ \ \ \ \ \isakeywordONE{unfolding}\isamarkupfalse%
+\ asymetrique{\isacharunderscore}{\kern0pt}ordonnee{\isacharunderscore}{\kern0pt}nat{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ auto\isanewline
+\ \ \isakeywordONE{next}\isamarkupfalse%
+\isanewline
+\ \ \ \ \isakeywordTHREE{assume}\isamarkupfalse%
+\ h{\isadigit{2}}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}asymetrique{\isacharunderscore}{\kern0pt}chaotique{\isacharunderscore}{\kern0pt}nat\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices{\isachardoublequoteclose}\isanewline
+\ \ \ \ \isakeywordONE{then}\isamarkupfalse%
+\ \isakeywordTHREE{show}\isamarkupfalse%
+\ {\isacharquery}{\kern0pt}thesis\isanewline
+\ \ \ \ \ \ \isakeywordONE{unfolding}\isamarkupfalse%
+\ asymetrique{\isacharunderscore}{\kern0pt}chaotique{\isacharunderscore}{\kern0pt}nat{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ auto\isanewline
+\ \ \isakeywordONE{qed}\isamarkupfalse%
+\isanewline
+\isakeywordONE{qed}\isamarkupfalse%
+%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\begin{isamarkuptext}%
+Pour le modele 1/2, on utilise les suites SA et SB deja definies :
+
+    SA n = (3.25 / 2) * 2^n - 2
+    SB n = (6.5 / 2) * 2^n - 66
+
+  La methode de comparaison asymetrique travaille sur des blocs
+  d'indices A_indices et B_indices, qui correspondent a des positions
+  dans les suites de nombres premiers. On construit un rapport
+  spectral de blocs a partir des sommes des valeurs SA et SB.%
+\end{isamarkuptext}\isamarkuptrue%
+\isakeywordONE{definition}\isamarkupfalse%
+\ somme{\isacharunderscore}{\kern0pt}SA{\isacharunderscore}{\kern0pt}bloc\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ list\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}somme{\isacharunderscore}{\kern0pt}SA{\isacharunderscore}{\kern0pt}bloc\ A{\isacharunderscore}{\kern0pt}indices\ {\isacharequal}{\kern0pt}\ sum{\isacharunderscore}{\kern0pt}list\ {\isacharparenleft}{\kern0pt}map\ SA\ A{\isacharunderscore}{\kern0pt}indices{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ somme{\isacharunderscore}{\kern0pt}SB{\isacharunderscore}{\kern0pt}bloc\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ list\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}somme{\isacharunderscore}{\kern0pt}SB{\isacharunderscore}{\kern0pt}bloc\ B{\isacharunderscore}{\kern0pt}indices\ {\isacharequal}{\kern0pt}\ sum{\isacharunderscore}{\kern0pt}list\ {\isacharparenleft}{\kern0pt}map\ SB\ B{\isacharunderscore}{\kern0pt}indices{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}%
+\begin{isamarkuptext}%
+Rapport spectral de blocs pour le modele 1/2 :
+  on compare la difference des sommes de deux blocs A et B
+  pour SA et SB, comme dans l'exemple (11 - 50) / (-40 - 38).%
+\end{isamarkuptext}\isamarkuptrue%
+\isakeywordONE{definition}\isamarkupfalse%
+\ RsP{\isacharunderscore}{\kern0pt}bloc{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{2}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ list\ {\isasymRightarrow}\ nat\ list\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}RsP{\isacharunderscore}{\kern0pt}bloc{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{2}}\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}somme{\isacharunderscore}{\kern0pt}SA{\isacharunderscore}{\kern0pt}bloc\ A{\isacharunderscore}{\kern0pt}indices\ {\isacharminus}{\kern0pt}\ somme{\isacharunderscore}{\kern0pt}SA{\isacharunderscore}{\kern0pt}bloc\ B{\isacharunderscore}{\kern0pt}indices{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}somme{\isacharunderscore}{\kern0pt}SB{\isacharunderscore}{\kern0pt}bloc\ A{\isacharunderscore}{\kern0pt}indices\ {\isacharminus}{\kern0pt}\ somme{\isacharunderscore}{\kern0pt}SB{\isacharunderscore}{\kern0pt}bloc\ B{\isacharunderscore}{\kern0pt}indices{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}%
+\begin{isamarkuptext}%
+Comparaison asymetrique ordonnee (modele 1/2) :
+  - A_indices et B_indices sont strictement croissants,
+  - les indices sont valides (n > 0),
+  - B contient exactement un element de plus que A,
+  - les puissances associees aux equations generales sont donc
+    dans l'ordre naturel et decalees d'une unite.%
+\end{isamarkuptext}\isamarkuptrue%
+\isakeywordONE{definition}\isamarkupfalse%
+\ comparaison{\isacharunderscore}{\kern0pt}asym{\isacharunderscore}{\kern0pt}ordonnee{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{2}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ list\ {\isasymRightarrow}\ nat\ list\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}comparaison{\isacharunderscore}{\kern0pt}asym{\isacharunderscore}{\kern0pt}ordonnee{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{2}}\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices\ {\isasymlongleftrightarrow}\isanewline
+\ \ \ \ \ asymetrique{\isacharunderscore}{\kern0pt}ordonnee{\isacharunderscore}{\kern0pt}nat\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices{\isachardoublequoteclose}%
+\begin{isamarkuptext}%
+Comparaison asymetrique chaotique (modele 1/2) :
+  - A_indices et B_indices ont des longueurs differentes,
+  - l'ordre croissant naturel n'est pas impose,
+  - les puissances associees aux equations generales ne sont pas
+    necessairement consecutives.%
+\end{isamarkuptext}\isamarkuptrue%
+\isakeywordONE{definition}\isamarkupfalse%
+\ comparaison{\isacharunderscore}{\kern0pt}asym{\isacharunderscore}{\kern0pt}chaotique{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{2}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ list\ {\isasymRightarrow}\ nat\ list\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}comparaison{\isacharunderscore}{\kern0pt}asym{\isacharunderscore}{\kern0pt}chaotique{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{2}}\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices\ {\isasymlongleftrightarrow}\isanewline
+\ \ \ \ \ asymetrique{\isacharunderscore}{\kern0pt}chaotique{\isacharunderscore}{\kern0pt}nat\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices{\isachardoublequoteclose}%
+\begin{isamarkuptext}%
+La methode de comparaison asymetrique pour le modele 1/2
+  consiste donc a :
+  - choisir deux blocs A_indices et B_indices,
+  - verifier s'ils sont en configuration asymetrique ordonnee
+    ou chaotique,
+  - calculer le rapport RsP_bloc_1_2 A_indices B_indices.
+
+  Ce rapport est numeriquement tres proche de 1/2 dans le regime
+  chaotique, et evolue vers 1 dans certaines configurations
+  asymetriques ordonnees lorsque la taille des blocs augmente.
+  Ces comportements sont observes numeriquement et interpretes
+  comme signatures spectrales, sans etre derives algébriquement.%
+\end{isamarkuptext}\isamarkuptrue%
+%
+\begin{isamarkuptext}%
+Pour le modele 1/4, on utilise les suites A_1_4 et B_1_4 :
+
+    A_1_4 n = ((241/16)/12) * 4^n - 4/3
+    B_1_4 n = ((964/16)/12) * 4^n - (3073 * (4/3))
+
+  On applique la meme methode de comparaison asymetrique,
+  cette fois avec ces equations generales.%
+\end{isamarkuptext}\isamarkuptrue%
+\isakeywordONE{definition}\isamarkupfalse%
+\ somme{\isacharunderscore}{\kern0pt}A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}bloc\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ list\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}somme{\isacharunderscore}{\kern0pt}A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}bloc\ A{\isacharunderscore}{\kern0pt}indices\ {\isacharequal}{\kern0pt}\ sum{\isacharunderscore}{\kern0pt}list\ {\isacharparenleft}{\kern0pt}map\ A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ A{\isacharunderscore}{\kern0pt}indices{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ somme{\isacharunderscore}{\kern0pt}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}bloc\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ list\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}somme{\isacharunderscore}{\kern0pt}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}bloc\ B{\isacharunderscore}{\kern0pt}indices\ {\isacharequal}{\kern0pt}\ sum{\isacharunderscore}{\kern0pt}list\ {\isacharparenleft}{\kern0pt}map\ B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ B{\isacharunderscore}{\kern0pt}indices{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ RsP{\isacharunderscore}{\kern0pt}bloc{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ list\ {\isasymRightarrow}\ nat\ list\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}RsP{\isacharunderscore}{\kern0pt}bloc{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}somme{\isacharunderscore}{\kern0pt}A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}bloc\ A{\isacharunderscore}{\kern0pt}indices\ {\isacharminus}{\kern0pt}\ somme{\isacharunderscore}{\kern0pt}A{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}bloc\ B{\isacharunderscore}{\kern0pt}indices{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}somme{\isacharunderscore}{\kern0pt}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}bloc\ A{\isacharunderscore}{\kern0pt}indices\ {\isacharminus}{\kern0pt}\ somme{\isacharunderscore}{\kern0pt}B{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}bloc\ B{\isacharunderscore}{\kern0pt}indices{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ comparaison{\isacharunderscore}{\kern0pt}asym{\isacharunderscore}{\kern0pt}ordonnee{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ list\ {\isasymRightarrow}\ nat\ list\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}comparaison{\isacharunderscore}{\kern0pt}asym{\isacharunderscore}{\kern0pt}ordonnee{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices\ {\isasymlongleftrightarrow}\isanewline
+\ \ \ \ \ asymetrique{\isacharunderscore}{\kern0pt}ordonnee{\isacharunderscore}{\kern0pt}nat\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ comparaison{\isacharunderscore}{\kern0pt}asym{\isacharunderscore}{\kern0pt}chaotique{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}nat\ list\ {\isasymRightarrow}\ nat\ list\ {\isasymRightarrow}\ bool{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}comparaison{\isacharunderscore}{\kern0pt}asym{\isacharunderscore}{\kern0pt}chaotique{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices\ {\isasymlongleftrightarrow}\isanewline
+\ \ \ \ \ asymetrique{\isacharunderscore}{\kern0pt}chaotique{\isacharunderscore}{\kern0pt}nat\ A{\isacharunderscore}{\kern0pt}indices\ B{\isacharunderscore}{\kern0pt}indices{\isachardoublequoteclose}%
+\begin{isamarkuptext}%
+Comme pour le modele 1/2, la methode de comparaison asymetrique
+  pour le modele 1/4 s'applique a tout ensemble de nombres premiers
+  dont les positions (indices) correspondent aux puissances utilisees
+  dans les equations generales A_1_4 et B_1_4.
+
+  Les configurations asymetriques ordonnees et chaotiques permettent
+  d'observer numeriquement des rapports proches de 1/4 ou evoluant
+  vers 1, sans que ces valeurs puissent etre obtenues par une
+  simplification algébrique directe des equations generales.%
+\end{isamarkuptext}\isamarkuptrue%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Rapport spectral 1/3 negatif%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ SA{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}tiers\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}real\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SA{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}tiers\ n\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{7}}{\isadigit{3}}{\isacharslash}{\kern0pt}{\isadigit{9}}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{6}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{3}}\ powr\ n{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ {\isadigit{1}}{\isachardot}{\kern0pt}{\isadigit{5}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ SB{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}tiers\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}real\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SB{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}tiers\ n\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{2}}{\isadigit{1}}{\isadigit{9}}{\isacharslash}{\kern0pt}{\isadigit{9}}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{6}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{3}}\ powr\ n{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{4}}{\isadigit{8}}{\isadigit{7}}\ {\isacharasterisk}{\kern0pt}\ {\isadigit{1}}{\isachardot}{\kern0pt}{\isadigit{5}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ RsP{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}tiers\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}real\ {\isasymRightarrow}\ real\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}RsP{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}tiers\ n{\isadigit{1}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}SA{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}tiers\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ SA{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}tiers\ n{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}SB{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}tiers\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ SB{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}tiers\ n{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isakeywordONE{axiomatization}\isamarkupfalse%
+\ \isakeywordTWO{where}\isanewline
+\ \ spectral{\isacharunderscore}{\kern0pt}ratio{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}tiers{\isacharcolon}{\kern0pt}\isanewline
+\ \ \ \ {\isachardoublequoteopen}{\isasymlbrakk}\ n{\isadigit{1}}\ {\isasymle}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isacharsemicolon}{\kern0pt}\ n{\isadigit{2}}\ {\isasymle}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isacharsemicolon}{\kern0pt}\ n{\isadigit{1}}\ {\isasymnoteq}\ n{\isadigit{2}}\ {\isasymrbrakk}\ {\isasymLongrightarrow}\ RsP{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}tiers\ n{\isadigit{1}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isacharslash}{\kern0pt}{\isadigit{3}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ RsP{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}tiers{\isacharunderscore}{\kern0pt}general{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}n{\isadigit{1}}\ {\isasymle}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isachardoublequoteclose}\ {\isachardoublequoteopen}n{\isadigit{2}}\ {\isasymle}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isachardoublequoteclose}\ {\isachardoublequoteopen}n{\isadigit{1}}\ {\isasymnoteq}\ n{\isadigit{2}}{\isachardoublequoteclose}\isanewline
+\ \ \isakeywordTWO{shows}\ {\isachardoublequoteopen}RsP{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}tiers\ n{\isadigit{1}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isacharslash}{\kern0pt}{\isadigit{3}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ spectral{\isacharunderscore}{\kern0pt}ratio{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}tiers\ assms\ \isakeywordONE{by}\isamarkupfalse%
+\ blast%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Rapport spectral 1/4 negatif%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ SA{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}quart\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}real\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SA{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}quart\ n\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{2}}{\isadigit{4}}{\isadigit{1}}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{6}}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{1}}{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{4}}\ powr\ n{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{4}}{\isacharslash}{\kern0pt}{\isadigit{3}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ SB{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}quart\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}real\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SB{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}quart\ n\ {\isacharequal}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{9}}{\isadigit{6}}{\isadigit{4}}{\isacharslash}{\kern0pt}{\isadigit{1}}{\isadigit{6}}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{1}}{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{4}}\ powr\ n{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{3}}{\isadigit{0}}{\isadigit{7}}{\isadigit{3}}\ {\isacharasterisk}{\kern0pt}\ {\isacharparenleft}{\kern0pt}{\isadigit{4}}{\isacharslash}{\kern0pt}{\isadigit{3}}{\isacharparenright}{\kern0pt}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ RsP{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}quart\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}real\ {\isasymRightarrow}\ real\ {\isasymRightarrow}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}RsP{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}quart\ n{\isadigit{1}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}SA{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}quart\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ SA{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}quart\ n{\isadigit{2}}{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}SB{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}quart\ n{\isadigit{1}}\ {\isacharminus}{\kern0pt}\ SB{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}eq{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}quart\ n{\isadigit{2}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isakeywordONE{axiomatization}\isamarkupfalse%
+\ \isakeywordTWO{where}\isanewline
+\ \ spectral{\isacharunderscore}{\kern0pt}ratio{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}quart{\isacharcolon}{\kern0pt}\isanewline
+\ \ \ \ {\isachardoublequoteopen}{\isasymlbrakk}\ n{\isadigit{1}}\ {\isasymle}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isacharsemicolon}{\kern0pt}\ n{\isadigit{2}}\ {\isasymle}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isacharsemicolon}{\kern0pt}\ n{\isadigit{1}}\ {\isasymnoteq}\ n{\isadigit{2}}\ {\isasymrbrakk}\ {\isasymLongrightarrow}\ RsP{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}quart\ n{\isadigit{1}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isacharslash}{\kern0pt}{\isadigit{4}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ RsP{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}quart{\isacharunderscore}{\kern0pt}general{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}n{\isadigit{1}}\ {\isasymle}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isachardoublequoteclose}\ {\isachardoublequoteopen}n{\isadigit{2}}\ {\isasymle}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isachardoublequoteclose}\ {\isachardoublequoteopen}n{\isadigit{1}}\ {\isasymnoteq}\ n{\isadigit{2}}{\isachardoublequoteclose}\isanewline
+\ \ \isakeywordTWO{shows}\ {\isachardoublequoteopen}RsP{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}quart\ n{\isadigit{1}}\ n{\isadigit{2}}\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isacharslash}{\kern0pt}{\isadigit{4}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ spectral{\isacharunderscore}{\kern0pt}ratio{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}un{\isacharunderscore}{\kern0pt}quart\ assms\ \isakeywordONE{by}\isamarkupfalse%
+\ blast%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Forme générale de l'écart négatif%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ gap{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}gap{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}val\ A{\isacharunderscore}{\kern0pt}next\ B{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}low\ dummy\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ \ {\isacharparenleft}{\kern0pt}A{\isacharunderscore}{\kern0pt}next\ {\isacharminus}{\kern0pt}\ {\isacharparenleft}{\kern0pt}B{\isacharunderscore}{\kern0pt}high\ {\isacharminus}{\kern0pt}\ D{\isacharunderscore}{\kern0pt}high{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ D{\isacharunderscore}{\kern0pt}low{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{6}}{\isadigit{4}}{\isachardoublequoteclose}%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Exemple complet : écart entre -19 et -5%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\begin{isamarkuptext}%
+Pour l’écart entre -19 et -5 :
+    le premier suivant -5 est -7  -> SA(-7)
+    le rang spectral de -5 est -3 -> SB(-3)
+    le rang spectral de -19 est -8 -> SB(-8)%
+\end{isamarkuptext}\isamarkuptrue%
+\isakeywordONE{definition}\isamarkupfalse%
+\ n{\isacharunderscore}{\kern0pt}m{\isadigit{7}}\ \ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\ {\isachardoublequoteopen}n{\isacharunderscore}{\kern0pt}m{\isadigit{7}}\ \ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{7}}{\isachardoublequoteclose}\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ n{\isacharunderscore}{\kern0pt}m{\isadigit{3}}\ \ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\ {\isachardoublequoteopen}n{\isacharunderscore}{\kern0pt}m{\isadigit{3}}\ \ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{3}}{\isachardoublequoteclose}\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ n{\isacharunderscore}{\kern0pt}m{\isadigit{1}}{\isadigit{9}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\ {\isachardoublequoteopen}n{\isacharunderscore}{\kern0pt}m{\isadigit{1}}{\isadigit{9}}\ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{8}}{\isachardoublequoteclose}%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Valeurs spectrales exactes pour -19 et -5%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ SA{\isacharunderscore}{\kern0pt}m{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SA{\isacharunderscore}{\kern0pt}m{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isadigit{0}}{\isadigit{1}}{\isadigit{1}}{\isadigit{0}}\ {\isacharslash}{\kern0pt}\ {\isadigit{5}}{\isadigit{1}}{\isadigit{2}}{\isadigit{0}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ SB{\isacharunderscore}{\kern0pt}m{\isadigit{5}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SB{\isacharunderscore}{\kern0pt}m{\isadigit{5}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{2}}{\isadigit{0}}{\isadigit{8}}{\isadigit{6}}{\isadigit{0}}\ {\isacharslash}{\kern0pt}\ {\isadigit{3}}{\isadigit{2}}{\isadigit{0}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ D{\isacharunderscore}{\kern0pt}m{\isadigit{5}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}D{\isacharunderscore}{\kern0pt}m{\isadigit{5}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isadigit{8}}{\isadigit{1}}{\isadigit{5}}{\isadigit{4}}{\isadigit{0}}\ {\isacharslash}{\kern0pt}\ {\isadigit{3}}{\isadigit{2}}{\isadigit{0}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ SB{\isacharunderscore}{\kern0pt}m{\isadigit{1}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SB{\isacharunderscore}{\kern0pt}m{\isadigit{1}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{3}}{\isadigit{3}}{\isadigit{7}}{\isadigit{7}}{\isadigit{9}}{\isadigit{0}}\ {\isacharslash}{\kern0pt}\ {\isadigit{5}}{\isadigit{1}}{\isadigit{2}}{\isadigit{0}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ D{\isacharunderscore}{\kern0pt}m{\isadigit{1}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}D{\isacharunderscore}{\kern0pt}m{\isadigit{1}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isadigit{5}}{\isadigit{8}}{\isadigit{8}}{\isadigit{8}}{\isadigit{1}}{\isadigit{3}}{\isadigit{0}}\ {\isacharslash}{\kern0pt}\ {\isadigit{5}}{\isadigit{1}}{\isadigit{2}}{\isadigit{0}}{\isachardoublequoteclose}%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Démonstration finale : écart -19 / -5%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{lemma}\isamarkupfalse%
+\ gap{\isacharunderscore}{\kern0pt}m{\isadigit{1}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}m{\isadigit{5}}{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}gap{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}val\ SA{\isacharunderscore}{\kern0pt}m{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ SB{\isacharunderscore}{\kern0pt}m{\isadigit{5}}{\isacharunderscore}{\kern0pt}val\ D{\isacharunderscore}{\kern0pt}m{\isadigit{5}}{\isacharunderscore}{\kern0pt}val\ D{\isacharunderscore}{\kern0pt}m{\isadigit{1}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}val\ {\isadigit{0}}\ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isadigit{3}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ gap{\isacharunderscore}{\kern0pt}neg{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def\isanewline
+\ \ \ \ \ \ \ \ \ \ \ \ SA{\isacharunderscore}{\kern0pt}m{\isadigit{7}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def\ SB{\isacharunderscore}{\kern0pt}m{\isadigit{5}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def\isanewline
+\ \ \ \ \ \ \ \ \ \ \ \ D{\isacharunderscore}{\kern0pt}m{\isadigit{5}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def\ D{\isacharunderscore}{\kern0pt}m{\isadigit{1}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def\isanewline
+\ \ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Exemple complet : écart entre -31 et 17%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\begin{isamarkuptext}%
+Exemple mixte : quantité de nombres entre -31 et 17.
+  Le premier suivant -31 est -29  -> SA(-29)
+  Le rang spectral de 17 est 8    -> SB(8)
+  Le rang spectral de -31 est -11 -> SB(-11)%
+\end{isamarkuptext}\isamarkuptrue%
+\isakeywordONE{definition}\isamarkupfalse%
+\ n{\isacharunderscore}{\kern0pt}m{\isadigit{2}}{\isadigit{9}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\ {\isachardoublequoteopen}n{\isacharunderscore}{\kern0pt}m{\isadigit{2}}{\isadigit{9}}\ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isadigit{0}}{\isachardoublequoteclose}\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ n{\isacharunderscore}{\kern0pt}p{\isadigit{1}}{\isadigit{7}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\ {\isachardoublequoteopen}n{\isacharunderscore}{\kern0pt}p{\isadigit{1}}{\isadigit{7}}\ {\isacharequal}{\kern0pt}\ {\isadigit{8}}{\isachardoublequoteclose}\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ n{\isacharunderscore}{\kern0pt}m{\isadigit{3}}{\isadigit{1}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\ {\isachardoublequoteopen}n{\isacharunderscore}{\kern0pt}m{\isadigit{3}}{\isadigit{1}}\ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isadigit{1}}{\isachardoublequoteclose}%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Valeurs spectrales exactes pour -31 et 17%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ SA{\isacharunderscore}{\kern0pt}m{\isadigit{2}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SA{\isacharunderscore}{\kern0pt}m{\isadigit{2}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{4}}{\isadigit{0}}{\isadigit{8}}{\isadigit{9}}{\isadigit{5}}\ {\isacharslash}{\kern0pt}\ {\isadigit{2}}{\isadigit{0}}{\isadigit{4}}{\isadigit{8}}{\isadigit{0}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ SB{\isacharunderscore}{\kern0pt}p{\isadigit{1}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SB{\isacharunderscore}{\kern0pt}p{\isadigit{1}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isadigit{3}}{\isadigit{5}}{\isadigit{0}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ D{\isacharunderscore}{\kern0pt}p{\isadigit{1}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}D{\isacharunderscore}{\kern0pt}p{\isadigit{1}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{7}}{\isadigit{3}}{\isadigit{8}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ SB{\isacharunderscore}{\kern0pt}m{\isadigit{3}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SB{\isacharunderscore}{\kern0pt}m{\isadigit{3}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isadigit{3}}{\isadigit{5}}{\isadigit{1}}{\isadigit{6}}{\isadigit{1}}{\isadigit{5}}\ {\isacharslash}{\kern0pt}\ {\isadigit{2}}{\isadigit{0}}{\isadigit{4}}{\isadigit{8}}{\isadigit{0}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ D{\isacharunderscore}{\kern0pt}m{\isadigit{3}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}D{\isacharunderscore}{\kern0pt}m{\isadigit{3}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isadigit{3}}{\isadigit{9}}{\isadigit{2}}{\isadigit{8}}{\isadigit{0}}{\isadigit{7}}{\isadigit{0}}{\isadigit{5}}\ {\isacharslash}{\kern0pt}\ {\isadigit{2}}{\isadigit{0}}{\isadigit{4}}{\isadigit{8}}{\isadigit{0}}{\isachardoublequoteclose}%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Forme générale de l'écart mixte%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ gap{\isacharunderscore}{\kern0pt}mix{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\ real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}gap{\isacharunderscore}{\kern0pt}mix{\isacharunderscore}{\kern0pt}val\ A{\isacharunderscore}{\kern0pt}next\ B{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}low\ dummy\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ \ {\isacharparenleft}{\kern0pt}A{\isacharunderscore}{\kern0pt}next\ {\isacharminus}{\kern0pt}\ {\isacharparenleft}{\kern0pt}B{\isacharunderscore}{\kern0pt}high\ {\isacharminus}{\kern0pt}\ D{\isacharunderscore}{\kern0pt}high{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ D{\isacharunderscore}{\kern0pt}low{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{6}}{\isadigit{4}}{\isachardoublequoteclose}%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Démonstration finale : écart -31 / 17%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{lemma}\isamarkupfalse%
+\ gap{\isacharunderscore}{\kern0pt}m{\isadigit{3}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{7}}{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}gap{\isacharunderscore}{\kern0pt}mix{\isacharunderscore}{\kern0pt}val\ SA{\isacharunderscore}{\kern0pt}m{\isadigit{2}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}val\ SB{\isacharunderscore}{\kern0pt}p{\isadigit{1}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ D{\isacharunderscore}{\kern0pt}p{\isadigit{1}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ D{\isacharunderscore}{\kern0pt}m{\isadigit{3}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}val\ {\isadigit{0}}\ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{4}}{\isadigit{7}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ gap{\isacharunderscore}{\kern0pt}mix{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def\isanewline
+\ \ \ \ \ \ \ \ \ \ \ \ SA{\isacharunderscore}{\kern0pt}m{\isadigit{2}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def\ SB{\isacharunderscore}{\kern0pt}p{\isadigit{1}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def\isanewline
+\ \ \ \ \ \ \ \ \ \ \ \ D{\isacharunderscore}{\kern0pt}p{\isadigit{1}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def\ D{\isacharunderscore}{\kern0pt}m{\isadigit{3}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def\isanewline
+\ \ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Exemple complet : écart entre les premiers 23 et 7%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\begin{isamarkuptext}%
+Exemple positif : quantité de nombres entre les deux premiers 23 et 7.
+
+  On utilise la même méthode que pour les écarts -19 / -5 et -31 / 17 :
+
+    - Le premier suivant 7 est 11
+    - Le rang spectral de 7 est 4
+    - Le rang spectral de 23 est 9
+
+  Calculs numériques :
+
+    SA(11) = 50
+    SB(23) = 1598
+    D(23)  = 126
+    SB(7)  = -14
+    D(7)   = -464
+
+  Formule générale :
+
+    (A_next - (B_high - D_high) - D_low) / 64
+
+  Résultat :
+
+    (50 - (1598 - 126) - (-464)) / 64 = -15
+
+  Ce qui correspond aux 15 nombres entre 23 et 7.%
+\end{isamarkuptext}\isamarkuptrue%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Valeurs spectrales exactes pour 23 et 7%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ SA{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\ {\isachardoublequoteopen}SA{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isadigit{5}}{\isadigit{0}}{\isachardoublequoteclose}\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ SB{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{3}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\ {\isachardoublequoteopen}SB{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{3}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isadigit{5}}{\isadigit{9}}{\isadigit{8}}{\isachardoublequoteclose}\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ D{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{3}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\ {\isachardoublequoteopen}D{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{3}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isadigit{2}}{\isadigit{6}}{\isachardoublequoteclose}\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ SB{\isacharunderscore}{\kern0pt}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\ {\isachardoublequoteopen}SB{\isacharunderscore}{\kern0pt}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isadigit{4}}{\isachardoublequoteclose}\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ D{\isacharunderscore}{\kern0pt}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\ {\isachardoublequoteopen}D{\isacharunderscore}{\kern0pt}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{4}}{\isadigit{6}}{\isadigit{4}}{\isachardoublequoteclose}%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Note sur l'inclusion du zéro dans les écarts spectraux%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\begin{isamarkuptext}%
+Le zéro n'est inclus que dans les écarts mixtes (exemple -31 / 17).
+  Dans les écarts du même signe (-19 / -5 et 23 / 7), la progression
+  spectrale ne traverse pas 0, donc il n'est pas compté.%
+\end{isamarkuptext}\isamarkuptrue%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Exemple complet : écart entre les premiers 227 et 173 (rapport 1/3)%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\begin{isamarkuptext}%
+Exemple positif : quantité de nombres entre les deux premiers 227 et 173.
+
+  Données spectrales :
+
+    - Le premier suivant 173 est 179
+    - Rang spectral de 227 : 10
+    - Rang spectral de 173 : 1
+
+  Valeurs numériques :
+
+    SA(227) = 79824
+    SB(227) = 238746
+    D(227)  = 73263
+
+    SA(179) = 96/9
+
+    SB(173) = -2155/3
+    D(173)  = -1141518/9
+
+  Formule générale (rapport 1/3) :
+
+      (A_next - (B_high - D_high) - D_low) / 729
+
+  Résultat :
+
+      ((96/9) - (238746 - 73263) - (-1141518/9)) / 729 = -53
+
+  Ce qui correspond aux 53 nombres entre 227 et 173.%
+\end{isamarkuptext}\isamarkuptrue%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Valeurs spectrales exactes pour 227 et 173 (1/3)%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ SA{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{2}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SA{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{2}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isadigit{7}}{\isadigit{9}}{\isadigit{8}}{\isadigit{2}}{\isadigit{4}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ SB{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{2}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SB{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{2}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isadigit{2}}{\isadigit{3}}{\isadigit{8}}{\isadigit{7}}{\isadigit{4}}{\isadigit{6}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ D{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{2}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}D{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{2}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isadigit{7}}{\isadigit{3}}{\isadigit{2}}{\isadigit{6}}{\isadigit{3}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ SA{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{7}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SA{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{7}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isadigit{9}}{\isadigit{6}}{\isacharslash}{\kern0pt}{\isadigit{9}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ SB{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{7}}{\isadigit{3}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SB{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{7}}{\isadigit{3}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{2}}{\isadigit{1}}{\isadigit{5}}{\isadigit{5}}{\isacharslash}{\kern0pt}{\isadigit{3}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ D{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{7}}{\isadigit{3}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}D{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{7}}{\isadigit{3}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{1}}{\isadigit{1}}{\isadigit{4}}{\isadigit{1}}{\isadigit{5}}{\isadigit{1}}{\isadigit{8}}{\isacharslash}{\kern0pt}{\isadigit{9}}{\isachardoublequoteclose}%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Validation numérique de l'écart entre 227 et 173 (1/3)%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{lemma}\isamarkupfalse%
+\ ecart{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{2}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{7}}{\isadigit{3}}{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}{\isacharparenleft}{\kern0pt}{\isacharparenleft}{\kern0pt}SA{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{7}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}val\ {\isacharminus}{\kern0pt}\ {\isacharparenleft}{\kern0pt}SB{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{2}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharminus}{\kern0pt}\ D{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{2}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ D{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{7}}{\isadigit{3}}{\isacharunderscore}{\kern0pt}val{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{7}}{\isadigit{2}}{\isadigit{9}}{\isacharparenright}{\kern0pt}\ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{5}}{\isadigit{3}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ SA{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{7}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def\ SB{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{2}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def\ D{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{2}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def\ D{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{7}}{\isadigit{3}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def{\isacharparenright}{\kern0pt}%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Equation generale d'ecart pour le rapport spectral 1/3%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\begin{isamarkuptext}%
+Formule generale pour l'ecart entre deux nombres premiers
+  dans le modele spectral 1/3, a partir de deux suites A et B
+  de n termes et de leurs Digamma associes.
+
+  Forme generale (rapport 1/3) :
+
+      (A_next - (B_high - D_high) - D_low) / 729
+
+  ou :
+
+    - A_next  : somme de la suite A pour le premier suivant du plus petit
+    - B_high  : somme de la suite B pour le plus grand premier
+    - D_high  : Digamma du plus grand premier
+    - D_low   : Digamma du plus petit premier
+
+  Le resultat correspond a la quantite de nombres entiers entre les deux premiers.%
+\end{isamarkuptext}\isamarkuptrue%
+\isakeywordONE{definition}\isamarkupfalse%
+\ gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ A{\isacharunderscore}{\kern0pt}next\ B{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}low\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}A{\isacharunderscore}{\kern0pt}next\ {\isacharminus}{\kern0pt}\ {\isacharparenleft}{\kern0pt}B{\isacharunderscore}{\kern0pt}high\ {\isacharminus}{\kern0pt}\ D{\isacharunderscore}{\kern0pt}high{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ D{\isacharunderscore}{\kern0pt}low{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{7}}{\isadigit{2}}{\isadigit{9}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}simplifiee{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ A{\isacharunderscore}{\kern0pt}next\ B{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}low\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}A{\isacharunderscore}{\kern0pt}next\ {\isacharminus}{\kern0pt}\ B{\isacharunderscore}{\kern0pt}high\ {\isacharplus}{\kern0pt}\ D{\isacharunderscore}{\kern0pt}high\ {\isacharminus}{\kern0pt}\ D{\isacharunderscore}{\kern0pt}low{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{7}}{\isadigit{2}}{\isadigit{9}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\begin{isamarkuptext}%
+Postulat spectral d'ecart pour le rapport 1/3 :
+
+  Pour toute paire de nombres premiers (p_high, p_low),
+  et pour leurs valeurs spectrales associees (A_next, B_high, D_high, D_low)
+  construites selon le modele 1/3, l'equation d'ecart donne exactement
+  la quantite de nombres entiers entre ces deux premiers :
+
+      gap_equation_1_3 ... = p_low - p_high%
+\end{isamarkuptext}\isamarkuptrue%
+\isakeywordONE{axiomatization}\isamarkupfalse%
+\ \isakeywordTWO{where}\isanewline
+\ \ spectral{\isacharunderscore}{\kern0pt}gap{\isacharunderscore}{\kern0pt}postulate{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharcolon}{\kern0pt}\isanewline
+\ \ \ \ {\isachardoublequoteopen}{\isasymAnd}p{\isacharunderscore}{\kern0pt}high\ p{\isacharunderscore}{\kern0pt}low\ A{\isacharunderscore}{\kern0pt}next\ B{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}low{\isachardot}{\kern0pt}\isanewline
+\ \ \ \ \ \ \ prime\ p{\isacharunderscore}{\kern0pt}high{\isacharequal}{\kern0pt}{\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}prime\ p{\isacharunderscore}{\kern0pt}low{\isacharequal}{\kern0pt}{\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\isanewline
+\ \ \ \ \ \ \ gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ A{\isacharunderscore}{\kern0pt}next\ B{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}low\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ \ \ \ \ real\ {\isacharparenleft}{\kern0pt}p{\isacharunderscore}{\kern0pt}low\ {\isacharminus}{\kern0pt}\ p{\isacharunderscore}{\kern0pt}high{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}for{\isacharunderscore}{\kern0pt}primes{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}prime\ p{\isacharunderscore}{\kern0pt}high{\isachardoublequoteclose}\ {\isachardoublequoteopen}prime\ p{\isacharunderscore}{\kern0pt}low{\isachardoublequoteclose}\isanewline
+\ \ \isakeywordTWO{shows}\ {\isachardoublequoteopen}gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ A{\isacharunderscore}{\kern0pt}next\ B{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}low\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ \ \ \ \ real\ {\isacharparenleft}{\kern0pt}p{\isacharunderscore}{\kern0pt}low\ {\isacharminus}{\kern0pt}\ p{\isacharunderscore}{\kern0pt}high{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ spectral{\isacharunderscore}{\kern0pt}gap{\isacharunderscore}{\kern0pt}postulate{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ assms\ \isakeywordONE{by}\isamarkupfalse%
+\ blast%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Validation de l'exemple 227 / 173 via l'equation generale 1/3%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{lemma}\isamarkupfalse%
+\ ecart{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{2}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{7}}{\isadigit{3}}{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}via{\isacharunderscore}{\kern0pt}gap{\isacharunderscore}{\kern0pt}equation{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}\ SA{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{7}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}val\ SB{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{2}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ D{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{2}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ D{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{7}}{\isadigit{3}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{5}}{\isadigit{3}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{3}}{\isacharunderscore}{\kern0pt}def\isanewline
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SA{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{7}}{\isadigit{9}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def\ SB{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{2}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def\isanewline
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ D{\isacharunderscore}{\kern0pt}{\isadigit{2}}{\isadigit{2}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def\ D{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isadigit{7}}{\isadigit{3}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def{\isacharparenright}{\kern0pt}%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Valeurs spectrales exactes pour 947 et 881 (1/4)%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ SA{\isacharunderscore}{\kern0pt}{\isadigit{8}}{\isadigit{8}}{\isadigit{3}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SA{\isacharunderscore}{\kern0pt}{\isadigit{8}}{\isadigit{8}}{\isadigit{3}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isadigit{7}}{\isadigit{5}}{\isacharslash}{\kern0pt}{\isadigit{4}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ SB{\isacharunderscore}{\kern0pt}{\isadigit{9}}{\isadigit{4}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}SB{\isacharunderscore}{\kern0pt}{\isadigit{9}}{\isadigit{4}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isadigit{5}}{\isadigit{2}}{\isadigit{6}}{\isadigit{0}}{\isadigit{6}}{\isadigit{2}}{\isadigit{8}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ D{\isacharunderscore}{\kern0pt}{\isadigit{9}}{\isadigit{4}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}D{\isacharunderscore}{\kern0pt}{\isadigit{9}}{\isadigit{4}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isadigit{1}}{\isadigit{3}}{\isadigit{8}}{\isadigit{1}}{\isadigit{7}}{\isadigit{1}}{\isadigit{6}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{definition}\isamarkupfalse%
+\ D{\isacharunderscore}{\kern0pt}{\isadigit{8}}{\isadigit{8}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}val\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ real\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}D{\isacharunderscore}{\kern0pt}{\isadigit{8}}{\isadigit{8}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isacharparenleft}{\kern0pt}{\isadigit{1}}{\isadigit{4}}{\isadigit{4}}{\isadigit{5}}{\isadigit{0}}{\isadigit{6}}{\isadigit{1}}{\isadigit{3}}{\isacharslash}{\kern0pt}{\isadigit{4}}{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Equation generale d'ecart pour le rapport spectral 1/4%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{definition}\isamarkupfalse%
+\ gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ {\isacharcolon}{\kern0pt}{\isacharcolon}{\kern0pt}\ {\isachardoublequoteopen}real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}real\ {\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}real{\isachardoublequoteclose}\ \isakeywordTWO{where}\isanewline
+\ \ {\isachardoublequoteopen}gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ A{\isacharunderscore}{\kern0pt}next\ B{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}low\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}A{\isacharunderscore}{\kern0pt}next\ {\isacharminus}{\kern0pt}\ {\isacharparenleft}{\kern0pt}B{\isacharunderscore}{\kern0pt}high\ {\isacharminus}{\kern0pt}\ D{\isacharunderscore}{\kern0pt}high{\isacharparenright}{\kern0pt}\ {\isacharminus}{\kern0pt}\ D{\isacharunderscore}{\kern0pt}low{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{4}}{\isadigit{0}}{\isadigit{9}}{\isadigit{6}}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}simplifiee{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ A{\isacharunderscore}{\kern0pt}next\ B{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}low\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ {\isacharparenleft}{\kern0pt}A{\isacharunderscore}{\kern0pt}next\ {\isacharminus}{\kern0pt}\ B{\isacharunderscore}{\kern0pt}high\ {\isacharplus}{\kern0pt}\ D{\isacharunderscore}{\kern0pt}high\ {\isacharminus}{\kern0pt}\ D{\isacharunderscore}{\kern0pt}low{\isacharparenright}{\kern0pt}\ {\isacharslash}{\kern0pt}\ {\isadigit{4}}{\isadigit{0}}{\isadigit{9}}{\isadigit{6}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{unfolding}\isamarkupfalse%
+\ gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}def\ \isakeywordONE{by}\isamarkupfalse%
+\ simp%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\begin{isamarkuptext}%
+Postulat spectral d'ecart pour le rapport 1/4 :
+
+  Pour toute paire de nombres premiers (p_high, p_low),
+  et pour leurs valeurs spectrales associees (A_next, B_high, D_high, D_low)
+  construites selon le modele 1/4, l'equation d'ecart donne exactement
+  la quantite de nombres entiers entre ces deux premiers :
+
+      gap_equation_1_4 ... = p_low - p_high%
+\end{isamarkuptext}\isamarkuptrue%
+\isakeywordONE{axiomatization}\isamarkupfalse%
+\ \isakeywordTWO{where}\isanewline
+\ \ spectral{\isacharunderscore}{\kern0pt}gap{\isacharunderscore}{\kern0pt}postulate{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharcolon}{\kern0pt}\isanewline
+\ \ \ \ {\isachardoublequoteopen}{\isasymAnd}p{\isacharunderscore}{\kern0pt}high\ p{\isacharunderscore}{\kern0pt}low\ A{\isacharunderscore}{\kern0pt}next\ B{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}low{\isachardot}{\kern0pt}\isanewline
+\ \ \ \ \ \ \ prime\ p{\isacharunderscore}{\kern0pt}high{\isacharequal}{\kern0pt}{\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}prime\ p{\isacharunderscore}{\kern0pt}low{\isacharequal}{\kern0pt}{\isacharequal}{\kern0pt}{\isachargreater}{\kern0pt}\isanewline
+\ \ \ \ \ \ \ gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ A{\isacharunderscore}{\kern0pt}next\ B{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}low\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ \ \ \ \ real\ {\isacharparenleft}{\kern0pt}p{\isacharunderscore}{\kern0pt}low\ {\isacharminus}{\kern0pt}\ p{\isacharunderscore}{\kern0pt}high{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isanewline
+\isakeywordONE{lemma}\isamarkupfalse%
+\ gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}for{\isacharunderscore}{\kern0pt}primes{\isacharcolon}{\kern0pt}\isanewline
+\ \ \isakeywordTWO{assumes}\ {\isachardoublequoteopen}prime\ p{\isacharunderscore}{\kern0pt}high{\isachardoublequoteclose}\ {\isachardoublequoteopen}prime\ p{\isacharunderscore}{\kern0pt}low{\isachardoublequoteclose}\isanewline
+\ \ \isakeywordTWO{shows}\ {\isachardoublequoteopen}gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ A{\isacharunderscore}{\kern0pt}next\ B{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}high\ D{\isacharunderscore}{\kern0pt}low\ {\isacharequal}{\kern0pt}\isanewline
+\ \ \ \ \ \ \ \ \ real\ {\isacharparenleft}{\kern0pt}p{\isacharunderscore}{\kern0pt}low\ {\isacharminus}{\kern0pt}\ p{\isacharunderscore}{\kern0pt}high{\isacharparenright}{\kern0pt}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{using}\isamarkupfalse%
+\ spectral{\isacharunderscore}{\kern0pt}gap{\isacharunderscore}{\kern0pt}postulate{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ assms\ \isakeywordONE{by}\isamarkupfalse%
+\ blast%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\isadelimdocument
+%
+\endisadelimdocument
+%
+\isatagdocument
+%
+\isamarkupsection{Validation de l'exemple 947 / 881 via l'equation generale 1/4%
+}
+\isamarkuptrue%
+%
+\endisatagdocument
+{\isafolddocument}%
+%
+\isadelimdocument
+%
+\endisadelimdocument
+\isakeywordONE{lemma}\isamarkupfalse%
+\ ecart{\isacharunderscore}{\kern0pt}{\isadigit{9}}{\isadigit{4}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}{\isadigit{8}}{\isadigit{8}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}via{\isacharunderscore}{\kern0pt}gap{\isacharunderscore}{\kern0pt}equation{\isacharcolon}{\kern0pt}\isanewline
+\ \ {\isachardoublequoteopen}gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}\ SA{\isacharunderscore}{\kern0pt}{\isadigit{8}}{\isadigit{8}}{\isadigit{3}}{\isacharunderscore}{\kern0pt}val\ SB{\isacharunderscore}{\kern0pt}{\isadigit{9}}{\isadigit{4}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ D{\isacharunderscore}{\kern0pt}{\isadigit{9}}{\isadigit{4}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val\ D{\isacharunderscore}{\kern0pt}{\isadigit{8}}{\isadigit{8}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}val\ {\isacharequal}{\kern0pt}\ {\isacharminus}{\kern0pt}{\isadigit{6}}{\isadigit{5}}{\isachardoublequoteclose}\isanewline
+%
+\isadelimproof
+\ \ %
+\endisadelimproof
+%
+\isatagproof
+\isakeywordONE{by}\isamarkupfalse%
+\ {\isacharparenleft}{\kern0pt}simp\ add{\isacharcolon}{\kern0pt}\ gap{\isacharunderscore}{\kern0pt}equation{\isacharunderscore}{\kern0pt}{\isadigit{1}}{\isacharunderscore}{\kern0pt}{\isadigit{4}}{\isacharunderscore}{\kern0pt}def\isanewline
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SA{\isacharunderscore}{\kern0pt}{\isadigit{8}}{\isadigit{8}}{\isadigit{3}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def\ SB{\isacharunderscore}{\kern0pt}{\isadigit{9}}{\isadigit{4}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def\isanewline
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ D{\isacharunderscore}{\kern0pt}{\isadigit{9}}{\isadigit{4}}{\isadigit{7}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def\ D{\isacharunderscore}{\kern0pt}{\isadigit{8}}{\isadigit{8}}{\isadigit{1}}{\isacharunderscore}{\kern0pt}val{\isacharunderscore}{\kern0pt}def{\isacharparenright}{\kern0pt}%
+\endisatagproof
+{\isafoldproof}%
+%
+\isadelimproof
+%
+\endisadelimproof
+%
+\begin{isamarkuptext}%
+Tous droits réservés.
+  Toute reproduction, diffusion ou utilisation commerciale
+  est interdite sans l'autorisation écrite de l'auteur.
+
+  Auteur : Philippe Thomas Savard
+  Date   : Deux février deux mille vingt-deux%
+\end{isamarkuptext}\isamarkuptrue%
+%
+\isadelimtheory
+%
+\endisadelimtheory
+%
+\isatagtheory
+\isakeywordTWO{end}\isamarkupfalse%
+%
+\endisatagtheory
+{\isafoldtheory}%
+%
+\isadelimtheory
+%
+\endisadelimtheory
+%
+\end{isabellebody}%
+\endinput
+%:%file=/cygdrive/c/philippe_thomas_savard_20_fevrier_2026/methode_spectral.thy%:%
+%:%10=1%:%
+%:%11=1%:%
+%:%12=2%:%
+%:%13=3%:%
+%:%27=62%:%
+%:%37=64%:%
+%:%38=64%:%
+%:%39=65%:%
+%:%40=66%:%
+%:%41=67%:%
+%:%42=67%:%
+%:%43=68%:%
+%:%44=69%:%
+%:%45=70%:%
+%:%46=71%:%
+%:%47=72%:%
+%:%48=73%:%
+%:%49=74%:%
+%:%50=75%:%
+%:%51=75%:%
+%:%52=76%:%
+%:%53=77%:%
+%:%56=78%:%
+%:%60=78%:%
+%:%61=78%:%
+%:%62=78%:%
+%:%67=78%:%
+%:%70=79%:%
+%:%71=80%:%
+%:%72=80%:%
+%:%73=81%:%
+%:%74=82%:%
+%:%77=83%:%
+%:%81=83%:%
+%:%82=83%:%
+%:%83=83%:%
+%:%88=83%:%
+%:%91=84%:%
+%:%92=85%:%
+%:%93=86%:%
+%:%94=87%:%
+%:%95=88%:%
+%:%96=89%:%
+%:%97=89%:%
+%:%98=90%:%
+%:%105=94%:%
+%:%115=96%:%
+%:%116=96%:%
+%:%117=97%:%
+%:%118=98%:%
+%:%119=99%:%
+%:%120=99%:%
+%:%121=100%:%
+%:%122=101%:%
+%:%129=102%:%
+%:%130=102%:%
+%:%131=103%:%
+%:%132=103%:%
+%:%133=104%:%
+%:%134=104%:%
+%:%135=105%:%
+%:%136=105%:%
+%:%137=106%:%
+%:%138=106%:%
+%:%139=107%:%
+%:%140=107%:%
+%:%141=108%:%
+%:%142=108%:%
+%:%143=109%:%
+%:%144=109%:%
+%:%145=110%:%
+%:%146=110%:%
+%:%147=111%:%
+%:%148=112%:%
+%:%149=112%:%
+%:%150=113%:%
+%:%151=113%:%
+%:%152=114%:%
+%:%153=114%:%
+%:%154=115%:%
+%:%155=115%:%
+%:%156=116%:%
+%:%157=117%:%
+%:%158=117%:%
+%:%160=119%:%
+%:%161=120%:%
+%:%162=120%:%
+%:%163=121%:%
+%:%164=121%:%
+%:%165=121%:%
+%:%166=122%:%
+%:%167=122%:%
+%:%168=122%:%
+%:%169=123%:%
+%:%170=123%:%
+%:%171=123%:%
+%:%172=124%:%
+%:%173=124%:%
+%:%174=125%:%
+%:%175=125%:%
+%:%176=125%:%
+%:%177=125%:%
+%:%178=126%:%
+%:%193=132%:%
+%:%203=134%:%
+%:%204=134%:%
+%:%205=135%:%
+%:%207=137%:%
+%:%208=138%:%
+%:%209=139%:%
+%:%210=139%:%
+%:%211=140%:%
+%:%212=141%:%
+%:%213=142%:%
+%:%214=143%:%
+%:%215=143%:%
+%:%216=144%:%
+%:%217=145%:%
+%:%218=146%:%
+%:%219=146%:%
+%:%220=147%:%
+%:%227=162%:%
+%:%237=164%:%
+%:%238=164%:%
+%:%239=165%:%
+%:%240=166%:%
+%:%241=167%:%
+%:%242=167%:%
+%:%243=168%:%
+%:%244=169%:%
+%:%245=170%:%
+%:%246=170%:%
+%:%247=171%:%
+%:%250=172%:%
+%:%254=172%:%
+%:%255=172%:%
+%:%256=172%:%
+%:%261=172%:%
+%:%264=173%:%
+%:%265=174%:%
+%:%266=174%:%
+%:%267=175%:%
+%:%270=176%:%
+%:%274=176%:%
+%:%275=176%:%
+%:%276=177%:%
+%:%277=177%:%
+%:%291=183%:%
+%:%301=185%:%
+%:%302=185%:%
+%:%303=186%:%
+%:%304=187%:%
+%:%305=188%:%
+%:%306=189%:%
+%:%307=189%:%
+%:%308=190%:%
+%:%309=191%:%
+%:%312=192%:%
+%:%316=192%:%
+%:%317=192%:%
+%:%318=192%:%
+%:%332=198%:%
+%:%342=200%:%
+%:%343=200%:%
+%:%344=201%:%
+%:%345=201%:%
+%:%346=202%:%
+%:%347=202%:%
+%:%348=203%:%
+%:%349=203%:%
+%:%350=204%:%
+%:%351=205%:%
+%:%352=205%:%
+%:%353=206%:%
+%:%354=206%:%
+%:%355=207%:%
+%:%356=207%:%
+%:%357=208%:%
+%:%358=208%:%
+%:%365=210%:%
+%:%375=212%:%
+%:%376=212%:%
+%:%379=213%:%
+%:%383=213%:%
+%:%384=213%:%
+%:%385=213%:%
+%:%390=213%:%
+%:%393=214%:%
+%:%394=215%:%
+%:%395=215%:%
+%:%398=216%:%
+%:%402=216%:%
+%:%403=216%:%
+%:%404=216%:%
+%:%409=216%:%
+%:%412=217%:%
+%:%413=218%:%
+%:%414=218%:%
+%:%417=219%:%
+%:%421=219%:%
+%:%422=219%:%
+%:%423=219%:%
+%:%428=219%:%
+%:%431=220%:%
+%:%432=221%:%
+%:%433=221%:%
+%:%436=222%:%
+%:%440=222%:%
+%:%441=222%:%
+%:%442=222%:%
+%:%447=222%:%
+%:%450=223%:%
+%:%451=224%:%
+%:%452=224%:%
+%:%455=225%:%
+%:%459=225%:%
+%:%460=225%:%
+%:%461=225%:%
+%:%466=225%:%
+%:%469=226%:%
+%:%470=227%:%
+%:%471=227%:%
+%:%474=228%:%
+%:%478=228%:%
+%:%479=228%:%
+%:%480=228%:%
+%:%485=228%:%
+%:%488=229%:%
+%:%489=230%:%
+%:%490=230%:%
+%:%493=231%:%
+%:%497=231%:%
+%:%498=231%:%
+%:%499=231%:%
+%:%504=231%:%
+%:%507=232%:%
+%:%508=233%:%
+%:%509=233%:%
+%:%512=234%:%
+%:%516=234%:%
+%:%517=234%:%
+%:%518=234%:%
+%:%523=234%:%
+%:%526=235%:%
+%:%527=236%:%
+%:%528=236%:%
+%:%529=237%:%
+%:%532=238%:%
+%:%536=238%:%
+%:%537=238%:%
+%:%538=238%:%
+%:%543=238%:%
+%:%546=239%:%
+%:%547=240%:%
+%:%548=240%:%
+%:%549=241%:%
+%:%552=242%:%
+%:%556=242%:%
+%:%557=242%:%
+%:%558=242%:%
+%:%563=242%:%
+%:%566=243%:%
+%:%567=244%:%
+%:%568=244%:%
+%:%569=245%:%
+%:%572=246%:%
+%:%576=246%:%
+%:%577=246%:%
+%:%578=246%:%
+%:%583=246%:%
+%:%586=247%:%
+%:%587=248%:%
+%:%588=248%:%
+%:%589=249%:%
+%:%592=250%:%
+%:%596=250%:%
+%:%597=250%:%
+%:%598=250%:%
+%:%603=250%:%
+%:%606=251%:%
+%:%607=252%:%
+%:%608=252%:%
+%:%609=253%:%
+%:%612=254%:%
+%:%616=254%:%
+%:%617=254%:%
+%:%618=254%:%
+%:%623=254%:%
+%:%626=255%:%
+%:%627=256%:%
+%:%628=256%:%
+%:%629=257%:%
+%:%632=258%:%
+%:%636=258%:%
+%:%637=258%:%
+%:%638=258%:%
+%:%643=258%:%
+%:%646=259%:%
+%:%647=260%:%
+%:%648=260%:%
+%:%649=261%:%
+%:%652=262%:%
+%:%656=262%:%
+%:%657=262%:%
+%:%658=262%:%
+%:%663=262%:%
+%:%666=263%:%
+%:%667=264%:%
+%:%668=264%:%
+%:%669=265%:%
+%:%672=266%:%
+%:%676=266%:%
+%:%677=266%:%
+%:%678=266%:%
+%:%692=271%:%
+%:%704=274%:%
+%:%705=275%:%
+%:%706=276%:%
+%:%707=277%:%
+%:%709=282%:%
+%:%710=282%:%
+%:%711=283%:%
+%:%712=284%:%
+%:%713=285%:%
+%:%714=285%:%
+%:%715=286%:%
+%:%716=287%:%
+%:%717=288%:%
+%:%718=289%:%
+%:%719=290%:%
+%:%720=291%:%
+%:%721=292%:%
+%:%722=293%:%
+%:%723=293%:%
+%:%724=294%:%
+%:%725=295%:%
+%:%726=296%:%
+%:%727=296%:%
+%:%728=297%:%
+%:%731=298%:%
+%:%735=298%:%
+%:%736=298%:%
+%:%737=298%:%
+%:%751=304%:%
+%:%761=305%:%
+%:%762=305%:%
+%:%763=306%:%
+%:%764=307%:%
+%:%765=308%:%
+%:%766=309%:%
+%:%767=310%:%
+%:%768=311%:%
+%:%769=312%:%
+%:%770=313%:%
+%:%771=314%:%
+%:%772=314%:%
+%:%773=315%:%
+%:%774=316%:%
+%:%777=317%:%
+%:%781=317%:%
+%:%782=317%:%
+%:%783=317%:%
+%:%797=324%:%
+%:%809=327%:%
+%:%810=328%:%
+%:%811=329%:%
+%:%812=330%:%
+%:%813=331%:%
+%:%814=332%:%
+%:%816=335%:%
+%:%817=335%:%
+%:%818=336%:%
+%:%819=337%:%
+%:%820=338%:%
+%:%821=338%:%
+%:%822=339%:%
+%:%823=340%:%
+%:%824=341%:%
+%:%825=341%:%
+%:%826=342%:%
+%:%827=343%:%
+%:%828=344%:%
+%:%829=344%:%
+%:%830=345%:%
+%:%831=346%:%
+%:%832=347%:%
+%:%833=347%:%
+%:%834=348%:%
+%:%837=349%:%
+%:%841=349%:%
+%:%842=349%:%
+%:%843=350%:%
+%:%857=355%:%
+%:%869=357%:%
+%:%870=358%:%
+%:%871=359%:%
+%:%872=360%:%
+%:%874=363%:%
+%:%875=363%:%
+%:%876=364%:%
+%:%877=365%:%
+%:%878=366%:%
+%:%879=366%:%
+%:%880=367%:%
+%:%881=368%:%
+%:%882=369%:%
+%:%883=370%:%
+%:%884=371%:%
+%:%885=372%:%
+%:%886=373%:%
+%:%887=374%:%
+%:%888=374%:%
+%:%889=375%:%
+%:%890=376%:%
+%:%891=377%:%
+%:%892=377%:%
+%:%893=378%:%
+%:%896=379%:%
+%:%900=379%:%
+%:%901=379%:%
+%:%902=379%:%
+%:%916=385%:%
+%:%926=386%:%
+%:%927=386%:%
+%:%928=387%:%
+%:%929=388%:%
+%:%930=389%:%
+%:%931=390%:%
+%:%932=391%:%
+%:%933=392%:%
+%:%934=393%:%
+%:%935=394%:%
+%:%936=395%:%
+%:%937=395%:%
+%:%938=396%:%
+%:%939=397%:%
+%:%942=398%:%
+%:%946=398%:%
+%:%947=398%:%
+%:%948=398%:%
+%:%962=405%:%
+%:%972=407%:%
+%:%973=407%:%
+%:%974=408%:%
+%:%975=409%:%
+%:%976=410%:%
+%:%977=410%:%
+%:%978=411%:%
+%:%985=413%:%
+%:%995=414%:%
+%:%996=414%:%
+%:%997=415%:%
+%:%998=416%:%
+%:%999=417%:%
+%:%1000=417%:%
+%:%1001=418%:%
+%:%1002=419%:%
+%:%1003=420%:%
+%:%1004=420%:%
+%:%1005=421%:%
+%:%1008=422%:%
+%:%1012=422%:%
+%:%1013=422%:%
+%:%1014=423%:%
+%:%1028=428%:%
+%:%1040=430%:%
+%:%1049=432%:%
+%:%1059=435%:%
+%:%1060=435%:%
+%:%1061=436%:%
+%:%1063=438%:%
+%:%1064=439%:%
+%:%1065=440%:%
+%:%1066=440%:%
+%:%1067=441%:%
+%:%1068=442%:%
+%:%1075=443%:%
+%:%1076=443%:%
+%:%1077=444%:%
+%:%1078=444%:%
+%:%1079=445%:%
+%:%1080=446%:%
+%:%1081=447%:%
+%:%1082=447%:%
+%:%1083=447%:%
+%:%1084=448%:%
+%:%1085=449%:%
+%:%1086=449%:%
+%:%1087=450%:%
+%:%1088=451%:%
+%:%1089=452%:%
+%:%1090=452%:%
+%:%1091=452%:%
+%:%1092=453%:%
+%:%1093=454%:%
+%:%1094=454%:%
+%:%1096=456%:%
+%:%1097=457%:%
+%:%1098=457%:%
+%:%1099=457%:%
+%:%1100=458%:%
+%:%1101=459%:%
+%:%1102=459%:%
+%:%1103=459%:%
+%:%1104=460%:%
+%:%1105=460%:%
+%:%1106=460%:%
+%:%1107=461%:%
+%:%1108=462%:%
+%:%1109=462%:%
+%:%1110=462%:%
+%:%1111=463%:%
+%:%1112=463%:%
+%:%1113=464%:%
+%:%1114=465%:%
+%:%1115=465%:%
+%:%1116=465%:%
+%:%1117=465%:%
+%:%1118=466%:%
+%:%1133=470%:%
+%:%1143=472%:%
+%:%1144=472%:%
+%:%1145=473%:%
+%:%1154=476%:%
+%:%1164=477%:%
+%:%1165=477%:%
+%:%1166=478%:%
+%:%1167=479%:%
+%:%1174=480%:%
+%:%1175=480%:%
+%:%1176=481%:%
+%:%1177=481%:%
+%:%1178=482%:%
+%:%1179=483%:%
+%:%1180=484%:%
+%:%1181=484%:%
+%:%1182=484%:%
+%:%1183=485%:%
+%:%1184=486%:%
+%:%1185=486%:%
+%:%1186=487%:%
+%:%1187=488%:%
+%:%1188=489%:%
+%:%1189=489%:%
+%:%1190=489%:%
+%:%1191=490%:%
+%:%1192=491%:%
+%:%1193=491%:%
+%:%1195=493%:%
+%:%1196=494%:%
+%:%1197=494%:%
+%:%1198=494%:%
+%:%1199=495%:%
+%:%1200=496%:%
+%:%1201=496%:%
+%:%1202=496%:%
+%:%1203=497%:%
+%:%1204=497%:%
+%:%1205=497%:%
+%:%1206=498%:%
+%:%1207=499%:%
+%:%1208=499%:%
+%:%1209=499%:%
+%:%1210=500%:%
+%:%1211=500%:%
+%:%1212=501%:%
+%:%1213=502%:%
+%:%1214=502%:%
+%:%1215=502%:%
+%:%1216=502%:%
+%:%1217=503%:%
+%:%1232=509%:%
+%:%1242=511%:%
+%:%1243=511%:%
+%:%1244=512%:%
+%:%1245=513%:%
+%:%1246=514%:%
+%:%1247=514%:%
+%:%1248=515%:%
+%:%1249=516%:%
+%:%1250=517%:%
+%:%1251=517%:%
+%:%1252=518%:%
+%:%1253=519%:%
+%:%1254=520%:%
+%:%1255=520%:%
+%:%1256=521%:%
+%:%1259=522%:%
+%:%1263=522%:%
+%:%1264=522%:%
+%:%1265=523%:%
+%:%1266=523%:%
+%:%1280=530%:%
+%:%1290=532%:%
+%:%1291=532%:%
+%:%1292=533%:%
+%:%1294=535%:%
+%:%1295=536%:%
+%:%1296=537%:%
+%:%1297=537%:%
+%:%1298=538%:%
+%:%1299=539%:%
+%:%1300=540%:%
+%:%1301=541%:%
+%:%1302=541%:%
+%:%1303=542%:%
+%:%1304=543%:%
+%:%1307=544%:%
+%:%1311=544%:%
+%:%1312=544%:%
+%:%1313=544%:%
+%:%1327=551%:%
+%:%1337=553%:%
+%:%1338=553%:%
+%:%1339=554%:%
+%:%1340=555%:%
+%:%1341=556%:%
+%:%1342=556%:%
+%:%1343=557%:%
+%:%1344=558%:%
+%:%1345=559%:%
+%:%1346=560%:%
+%:%1347=560%:%
+%:%1348=561%:%
+%:%1356=569%:%
+%:%1357=570%:%
+%:%1358=571%:%
+%:%1359=571%:%
+%:%1360=572%:%
+%:%1364=576%:%
+%:%1365=577%:%
+%:%1366=578%:%
+%:%1367=578%:%
+%:%1368=579%:%
+%:%1369=580%:%
+%:%1370=581%:%
+%:%1371=582%:%
+%:%1378=583%:%
+%:%1379=583%:%
+%:%1380=584%:%
+%:%1381=584%:%
+%:%1382=585%:%
+%:%1383=585%:%
+%:%1384=586%:%
+%:%1385=586%:%
+%:%1386=587%:%
+%:%1387=587%:%
+%:%1388=588%:%
+%:%1389=588%:%
+%:%1390=588%:%
+%:%1391=589%:%
+%:%1392=589%:%
+%:%1393=589%:%
+%:%1394=590%:%
+%:%1395=590%:%
+%:%1396=591%:%
+%:%1397=591%:%
+%:%1398=592%:%
+%:%1399=592%:%
+%:%1400=592%:%
+%:%1401=593%:%
+%:%1402=593%:%
+%:%1403=593%:%
+%:%1404=594%:%
+%:%1405=594%:%
+%:%1406=595%:%
+%:%1421=601%:%
+%:%1433=604%:%
+%:%1434=605%:%
+%:%1435=606%:%
+%:%1436=607%:%
+%:%1437=608%:%
+%:%1438=609%:%
+%:%1439=610%:%
+%:%1440=611%:%
+%:%1441=612%:%
+%:%1442=613%:%
+%:%1443=614%:%
+%:%1447=623%:%
+%:%1448=624%:%
+%:%1449=625%:%
+%:%1450=626%:%
+%:%1452=629%:%
+%:%1453=629%:%
+%:%1454=630%:%
+%:%1455=631%:%
+%:%1456=632%:%
+%:%1457=632%:%
+%:%1458=633%:%
+%:%1459=634%:%
+%:%1460=635%:%
+%:%1461=636%:%
+%:%1462=636%:%
+%:%1463=637%:%
+%:%1471=645%:%
+%:%1472=646%:%
+%:%1473=647%:%
+%:%1474=647%:%
+%:%1475=648%:%
+%:%1479=652%:%
+%:%1480=653%:%
+%:%1481=654%:%
+%:%1482=654%:%
+%:%1483=655%:%
+%:%1484=656%:%
+%:%1485=657%:%
+%:%1486=658%:%
+%:%1493=659%:%
+%:%1494=659%:%
+%:%1495=660%:%
+%:%1496=660%:%
+%:%1497=661%:%
+%:%1498=661%:%
+%:%1499=662%:%
+%:%1500=662%:%
+%:%1501=663%:%
+%:%1502=663%:%
+%:%1503=664%:%
+%:%1504=664%:%
+%:%1505=664%:%
+%:%1506=665%:%
+%:%1507=665%:%
+%:%1508=665%:%
+%:%1509=666%:%
+%:%1510=666%:%
+%:%1511=667%:%
+%:%1512=667%:%
+%:%1513=668%:%
+%:%1514=668%:%
+%:%1515=668%:%
+%:%1516=669%:%
+%:%1517=669%:%
+%:%1518=669%:%
+%:%1519=670%:%
+%:%1520=670%:%
+%:%1521=671%:%
+%:%1531=679%:%
+%:%1532=680%:%
+%:%1533=681%:%
+%:%1534=682%:%
+%:%1535=683%:%
+%:%1536=684%:%
+%:%1537=685%:%
+%:%1538=686%:%
+%:%1539=687%:%
+%:%1541=690%:%
+%:%1542=690%:%
+%:%1543=691%:%
+%:%1544=692%:%
+%:%1545=693%:%
+%:%1546=693%:%
+%:%1547=694%:%
+%:%1549=697%:%
+%:%1550=698%:%
+%:%1551=699%:%
+%:%1553=702%:%
+%:%1554=702%:%
+%:%1555=703%:%
+%:%1559=708%:%
+%:%1560=709%:%
+%:%1561=710%:%
+%:%1562=711%:%
+%:%1563=712%:%
+%:%1564=713%:%
+%:%1566=716%:%
+%:%1567=716%:%
+%:%1568=717%:%
+%:%1571=721%:%
+%:%1572=722%:%
+%:%1573=723%:%
+%:%1574=724%:%
+%:%1575=725%:%
+%:%1577=728%:%
+%:%1578=728%:%
+%:%1579=729%:%
+%:%1582=733%:%
+%:%1583=734%:%
+%:%1584=735%:%
+%:%1585=736%:%
+%:%1586=737%:%
+%:%1587=738%:%
+%:%1588=739%:%
+%:%1589=740%:%
+%:%1590=741%:%
+%:%1591=742%:%
+%:%1592=743%:%
+%:%1593=744%:%
+%:%1597=753%:%
+%:%1598=754%:%
+%:%1599=755%:%
+%:%1600=756%:%
+%:%1601=757%:%
+%:%1602=758%:%
+%:%1603=759%:%
+%:%1605=762%:%
+%:%1606=762%:%
+%:%1607=763%:%
+%:%1608=764%:%
+%:%1609=765%:%
+%:%1610=765%:%
+%:%1611=766%:%
+%:%1612=767%:%
+%:%1613=768%:%
+%:%1614=768%:%
+%:%1615=769%:%
+%:%1617=771%:%
+%:%1618=772%:%
+%:%1619=773%:%
+%:%1620=773%:%
+%:%1621=774%:%
+%:%1622=775%:%
+%:%1623=776%:%
+%:%1624=777%:%
+%:%1625=777%:%
+%:%1626=778%:%
+%:%1629=782%:%
+%:%1630=783%:%
+%:%1631=784%:%
+%:%1632=785%:%
+%:%1633=786%:%
+%:%1634=787%:%
+%:%1635=788%:%
+%:%1636=789%:%
+%:%1637=790%:%
+%:%1646=796%:%
+%:%1656=804%:%
+%:%1657=804%:%
+%:%1658=805%:%
+%:%1659=806%:%
+%:%1660=807%:%
+%:%1661=807%:%
+%:%1662=808%:%
+%:%1663=809%:%
+%:%1664=810%:%
+%:%1665=810%:%
+%:%1666=811%:%
+%:%1668=813%:%
+%:%1669=814%:%
+%:%1670=822%:%
+%:%1671=823%:%
+%:%1672=824%:%
+%:%1673=824%:%
+%:%1674=825%:%
+%:%1675=826%:%
+%:%1676=827%:%
+%:%1677=828%:%
+%:%1678=828%:%
+%:%1679=829%:%
+%:%1680=830%:%
+%:%1683=831%:%
+%:%1687=831%:%
+%:%1688=831%:%
+%:%1689=831%:%
+%:%1703=839%:%
+%:%1713=847%:%
+%:%1714=847%:%
+%:%1715=848%:%
+%:%1716=849%:%
+%:%1717=850%:%
+%:%1718=850%:%
+%:%1719=851%:%
+%:%1720=852%:%
+%:%1721=853%:%
+%:%1722=853%:%
+%:%1723=854%:%
+%:%1725=856%:%
+%:%1726=857%:%
+%:%1727=864%:%
+%:%1728=865%:%
+%:%1729=866%:%
+%:%1730=866%:%
+%:%1731=867%:%
+%:%1732=868%:%
+%:%1733=869%:%
+%:%1734=870%:%
+%:%1735=870%:%
+%:%1736=871%:%
+%:%1737=872%:%
+%:%1740=873%:%
+%:%1744=873%:%
+%:%1745=873%:%
+%:%1746=873%:%
+%:%1760=878%:%
+%:%1770=880%:%
+%:%1771=880%:%
+%:%1772=881%:%
+%:%1773=882%:%
+%:%1781=890%:%
+%:%1793=893%:%
+%:%1794=894%:%
+%:%1795=895%:%
+%:%1796=896%:%
+%:%1798=899%:%
+%:%1799=899%:%
+%:%1800=900%:%
+%:%1801=900%:%
+%:%1802=901%:%
+%:%1803=901%:%
+%:%1810=908%:%
+%:%1820=910%:%
+%:%1821=910%:%
+%:%1822=911%:%
+%:%1823=912%:%
+%:%1824=913%:%
+%:%1825=913%:%
+%:%1826=914%:%
+%:%1827=915%:%
+%:%1828=916%:%
+%:%1829=916%:%
+%:%1830=917%:%
+%:%1831=918%:%
+%:%1832=919%:%
+%:%1833=919%:%
+%:%1834=920%:%
+%:%1835=921%:%
+%:%1836=922%:%
+%:%1837=922%:%
+%:%1838=923%:%
+%:%1845=930%:%
+%:%1855=932%:%
+%:%1856=932%:%
+%:%1857=933%:%
+%:%1860=934%:%
+%:%1864=934%:%
+%:%1865=934%:%
+%:%1866=935%:%
+%:%1867=936%:%
+%:%1868=937%:%
+%:%1869=937%:%
+%:%1883=943%:%
+%:%1895=946%:%
+%:%1896=947%:%
+%:%1897=948%:%
+%:%1898=949%:%
+%:%1900=952%:%
+%:%1901=952%:%
+%:%1902=953%:%
+%:%1903=953%:%
+%:%1904=954%:%
+%:%1905=954%:%
+%:%1912=961%:%
+%:%1922=963%:%
+%:%1923=963%:%
+%:%1924=964%:%
+%:%1925=965%:%
+%:%1926=966%:%
+%:%1927=966%:%
+%:%1928=967%:%
+%:%1929=968%:%
+%:%1930=969%:%
+%:%1931=969%:%
+%:%1932=970%:%
+%:%1933=971%:%
+%:%1934=972%:%
+%:%1935=972%:%
+%:%1936=973%:%
+%:%1937=974%:%
+%:%1938=975%:%
+%:%1939=975%:%
+%:%1940=976%:%
+%:%1947=983%:%
+%:%1957=985%:%
+%:%1958=985%:%
+%:%1959=986%:%
+%:%1960=987%:%
+%:%1968=995%:%
+%:%1978=997%:%
+%:%1979=997%:%
+%:%1980=998%:%
+%:%1983=999%:%
+%:%1987=999%:%
+%:%1988=999%:%
+%:%1989=1000%:%
+%:%1990=1001%:%
+%:%1991=1002%:%
+%:%1992=1002%:%
+%:%2006=1009%:%
+%:%2018=1012%:%
+%:%2019=1013%:%
+%:%2020=1014%:%
+%:%2021=1015%:%
+%:%2022=1016%:%
+%:%2023=1017%:%
+%:%2024=1018%:%
+%:%2025=1019%:%
+%:%2026=1020%:%
+%:%2027=1021%:%
+%:%2028=1022%:%
+%:%2029=1023%:%
+%:%2030=1024%:%
+%:%2031=1025%:%
+%:%2032=1026%:%
+%:%2033=1027%:%
+%:%2034=1028%:%
+%:%2035=1029%:%
+%:%2036=1030%:%
+%:%2037=1031%:%
+%:%2038=1032%:%
+%:%2039=1033%:%
+%:%2040=1034%:%
+%:%2041=1035%:%
+%:%2042=1036%:%
+%:%2051=1043%:%
+%:%2061=1045%:%
+%:%2062=1045%:%
+%:%2063=1046%:%
+%:%2064=1046%:%
+%:%2065=1047%:%
+%:%2066=1047%:%
+%:%2067=1048%:%
+%:%2068=1048%:%
+%:%2069=1049%:%
+%:%2070=1049%:%
+%:%2077=1056%:%
+%:%2089=1059%:%
+%:%2090=1060%:%
+%:%2091=1061%:%
+%:%2100=1068%:%
+%:%2112=1071%:%
+%:%2113=1072%:%
+%:%2114=1073%:%
+%:%2115=1074%:%
+%:%2116=1075%:%
+%:%2117=1076%:%
+%:%2118=1077%:%
+%:%2119=1078%:%
+%:%2120=1079%:%
+%:%2121=1080%:%
+%:%2122=1081%:%
+%:%2123=1082%:%
+%:%2124=1083%:%
+%:%2125=1084%:%
+%:%2126=1085%:%
+%:%2127=1086%:%
+%:%2128=1087%:%
+%:%2129=1088%:%
+%:%2130=1089%:%
+%:%2131=1090%:%
+%:%2132=1091%:%
+%:%2133=1092%:%
+%:%2134=1093%:%
+%:%2135=1094%:%
+%:%2136=1095%:%
+%:%2137=1096%:%
+%:%2138=1097%:%
+%:%2139=1098%:%
+%:%2148=1106%:%
+%:%2158=1108%:%
+%:%2159=1108%:%
+%:%2160=1109%:%
+%:%2161=1110%:%
+%:%2162=1111%:%
+%:%2163=1111%:%
+%:%2164=1112%:%
+%:%2165=1113%:%
+%:%2166=1114%:%
+%:%2167=1114%:%
+%:%2168=1115%:%
+%:%2169=1116%:%
+%:%2170=1117%:%
+%:%2171=1118%:%
+%:%2172=1118%:%
+%:%2173=1119%:%
+%:%2174=1120%:%
+%:%2175=1121%:%
+%:%2176=1122%:%
+%:%2177=1122%:%
+%:%2178=1123%:%
+%:%2179=1124%:%
+%:%2180=1125%:%
+%:%2181=1125%:%
+%:%2182=1126%:%
+%:%2189=1133%:%
+%:%2199=1135%:%
+%:%2200=1135%:%
+%:%2201=1136%:%
+%:%2204=1137%:%
+%:%2208=1137%:%
+%:%2209=1137%:%
+%:%2223=1143%:%
+%:%2235=1146%:%
+%:%2236=1147%:%
+%:%2237=1148%:%
+%:%2238=1149%:%
+%:%2239=1150%:%
+%:%2240=1151%:%
+%:%2241=1152%:%
+%:%2242=1153%:%
+%:%2243=1154%:%
+%:%2244=1155%:%
+%:%2245=1156%:%
+%:%2246=1157%:%
+%:%2247=1158%:%
+%:%2248=1159%:%
+%:%2249=1160%:%
+%:%2250=1161%:%
+%:%2252=1164%:%
+%:%2253=1164%:%
+%:%2254=1165%:%
+%:%2255=1166%:%
+%:%2256=1167%:%
+%:%2257=1168%:%
+%:%2258=1168%:%
+%:%2259=1169%:%
+%:%2260=1170%:%
+%:%2263=1171%:%
+%:%2267=1171%:%
+%:%2268=1171%:%
+%:%2269=1171%:%
+%:%2278=1179%:%
+%:%2279=1180%:%
+%:%2280=1181%:%
+%:%2281=1182%:%
+%:%2282=1183%:%
+%:%2283=1184%:%
+%:%2284=1185%:%
+%:%2285=1186%:%
+%:%2287=1189%:%
+%:%2288=1189%:%
+%:%2289=1190%:%
+%:%2290=1191%:%
+%:%2293=1194%:%
+%:%2294=1195%:%
+%:%2295=1196%:%
+%:%2296=1197%:%
+%:%2297=1198%:%
+%:%2298=1199%:%
+%:%2299=1200%:%
+%:%2300=1201%:%
+%:%2301=1201%:%
+%:%2302=1202%:%
+%:%2303=1203%:%
+%:%2304=1204%:%
+%:%2307=1205%:%
+%:%2311=1205%:%
+%:%2312=1205%:%
+%:%2313=1205%:%
+%:%2327=1212%:%
+%:%2337=1214%:%
+%:%2338=1214%:%
+%:%2339=1215%:%
+%:%2342=1216%:%
+%:%2346=1216%:%
+%:%2347=1216%:%
+%:%2348=1217%:%
+%:%2349=1218%:%
+%:%2363=1225%:%
+%:%2373=1227%:%
+%:%2374=1227%:%
+%:%2375=1228%:%
+%:%2376=1229%:%
+%:%2377=1230%:%
+%:%2378=1230%:%
+%:%2379=1231%:%
+%:%2380=1232%:%
+%:%2381=1233%:%
+%:%2382=1233%:%
+%:%2383=1234%:%
+%:%2384=1235%:%
+%:%2385=1236%:%
+%:%2386=1236%:%
+%:%2387=1237%:%
+%:%2394=1244%:%
+%:%2404=1246%:%
+%:%2405=1246%:%
+%:%2406=1247%:%
+%:%2407=1248%:%
+%:%2408=1249%:%
+%:%2409=1250%:%
+%:%2410=1250%:%
+%:%2411=1251%:%
+%:%2412=1252%:%
+%:%2415=1253%:%
+%:%2419=1253%:%
+%:%2420=1253%:%
+%:%2421=1253%:%
+%:%2430=1261%:%
+%:%2431=1262%:%
+%:%2432=1263%:%
+%:%2433=1264%:%
+%:%2434=1265%:%
+%:%2435=1266%:%
+%:%2436=1267%:%
+%:%2437=1268%:%
+%:%2439=1271%:%
+%:%2440=1271%:%
+%:%2441=1272%:%
+%:%2442=1273%:%
+%:%2445=1276%:%
+%:%2446=1277%:%
+%:%2447=1278%:%
+%:%2448=1279%:%
+%:%2449=1280%:%
+%:%2450=1281%:%
+%:%2451=1282%:%
+%:%2452=1283%:%
+%:%2453=1283%:%
+%:%2454=1284%:%
+%:%2455=1285%:%
+%:%2456=1286%:%
+%:%2459=1287%:%
+%:%2463=1287%:%
+%:%2464=1287%:%
+%:%2465=1287%:%
+%:%2479=1294%:%
+%:%2489=1296%:%
+%:%2490=1296%:%
+%:%2491=1297%:%
+%:%2494=1298%:%
+%:%2498=1298%:%
+%:%2499=1298%:%
+%:%2500=1299%:%
+%:%2501=1300%:%
+%:%2510=1307%:%
+%:%2511=1308%:%
+%:%2512=1309%:%
+%:%2513=1310%:%
+%:%2514=1311%:%
+%:%2515=1312%:%
+%:%2523=1315%:%
